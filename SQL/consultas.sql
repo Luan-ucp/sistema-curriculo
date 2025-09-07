@@ -73,3 +73,15 @@ GROUP BY
 ORDER BY
     total_vagas DESC
 LIMIT 1;    
+
+
+/*Melhor Match para vaga */
+SELECT can.id_candidato, can.nome, can.email, COUNT(DISTINCT vh.id_hab) AS habilidades_correspondentes
+FROM Vaga v
+JOIN vaga_habilidade vh ON v.id_vaga = vh.id_vaga
+JOIN curriculo_habilidade ch ON vh.id_hab = ch.id_hab
+JOIN curriculo c ON ch.id_curriculo = c.id_curriculo
+JOIN candidato can ON c.id_candidato = can.id_candidato
+WHERE v.id_vaga = 1
+GROUP BY can.id_candidato
+ORDER BY COUNT(DISTINCT vh.id_hab) DESC
