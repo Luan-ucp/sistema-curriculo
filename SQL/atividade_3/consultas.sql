@@ -3,7 +3,8 @@ USE banco_de_vaga;
 SHOW TABLES;
 
 /* Quais são as vagas disponíveis?*/
-select * from Vaga;SELECT 
+select * from Vaga;
+SELECT 
     v.id_vaga,
     v.titulo,
     v.descricao,
