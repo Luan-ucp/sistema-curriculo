@@ -36,9 +36,9 @@ Default Schema: banco_de_vaga
 ---
 ## Estrutura de Pasta
 
-Dentro da pasta *./SQL* há subpastas nomeadas de acordo com a atividade a ser entregue, exemplo: *./atividade_3*.
+Dentro da pasta *./SQL* há subpastas nomeadas de acordo com a atividade a ser entregue, exemplo: *./SQL/atividade_3*.
 
-Também foi criada uma pasta de *./migrations* para armazenar os scripts de alterações na estrutura do banco de dados. O nome do arquivo *.sql* do migration deve ser respectivo a atividade, por exemplo: *atividade_3.sql*.
+Também foi criada uma pasta de *./SQL/migrations* para armazenar os scripts de alterações na estrutura do banco de dados. O nome do arquivo *.sql* do migration deve ser respectivo a atividade, por exemplo: *atividade_3.sql*.
 
 
 ## Tecnologias Utilizadas  
