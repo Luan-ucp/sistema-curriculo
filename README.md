@@ -34,6 +34,12 @@ Default Schema: banco_de_vaga
 5. Em caso de sucesso, salvar a conexão e acessar o banco de dados.  
 
 ---
+## Estrutura de Pasta
+
+Dentro da pasta *./SQL* há subpastas nomeadas de acordo com a atividade a ser entregue, exemplo: *./atividade_3*.
+
+Também foi criada uma pasta de *./migrations* para armazenar os scripts de alterações na estrutura do banco de dados. O nome do arquivo *.sql* do migration deve ser respectivo a atividade, por exemplo: *atividade_3.sql*.
+
 
 ## Tecnologias Utilizadas  
 
