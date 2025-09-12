@@ -11,4 +11,4 @@ JOIN Vaga_Habilidade vh ON v.id_vaga = vh.id_vaga
 JOIN Habilidade h ON vh.id_hab = h.id_hab
 GROUP BY v.id_vaga;
 
-SELECT * FROM vagashabilidades;
+-- SELECT * FROM VagasHabilidades;
