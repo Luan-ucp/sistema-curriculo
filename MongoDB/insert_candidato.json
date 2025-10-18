@@ -1,0 +1,668 @@
+[
+  {
+    
+    "nome": "Henrique Ferreira Santos",
+    "email": "henrique.ferreira.santos@exemplo.com",
+    "telefone": "+55 11 91896-2569",
+    "experiencia": "4 anos como Desenvolvedor Backend",
+    "formacao": "Ciência da Computação - UNICAMP",
+    "resumo": "Desenvolvedor Backend com sólida experiência em arquitetura de microsserviços e soluções em nuvem.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/henriqueferreirasantos" },
+      { "tipo": "GitHub", "valor": "github.com/hfsantos" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Ciência da Computação",
+          "instituicao": "UNICAMP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2021
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Desenvolvedor Backend Pleno",
+          "empresa": "InovaTech",
+          "inicio": "2021-08-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento e manutenção de APIs RESTful com Node.js, Python e integração com serviços AWS."
+        }
+      ],
+      "habilidades": ["Node.js", "Python", "MongoDB", "Docker", "AWS", "SQL"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Paula Moreira Pereira",
+    "email": "paula.moreira.pereira@exemplo.com",
+    "telefone": "+55 11 92741-1032",
+    "experiencia": "3 anos como Designer UX/UI",
+    "formacao": "Design Digital - FIAP",
+    "resumo": "Designer focada em criar experiências de usuário intuitivas e acessíveis para plataformas web e mobile.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/paulamoreirapereira" },
+      { "tipo": "Behance", "valor": "behance.net/paulamoreira" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Design Digital",
+          "instituicao": "FIAP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2022
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "UX/UI Designer",
+          "empresa": "Nubank",
+          "inicio": "2022-03-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Responsável pela pesquisa com usuários, criação de wireframes, protótipos interativos e design systems."
+        }
+      ],
+      "habilidades": ["Figma", "Adobe XD", "User Research", "Prototipação", "Design System"],
+      "idiomas": ["Português Nativo", "Inglês Intermediário"]
+    }
+  },
+  {
+    
+    "nome": "Sofia Teixeira da Silva",
+    "email": "sofia.teixeira.da.silva@exemplo.com",
+    "telefone": "+55 11 93482-7719",
+    "experiencia": "6 anos como Engenheira de Dados",
+    "formacao": "Engenharia da Computação - USP",
+    "resumo": "Especialista em construir e otimizar pipelines de dados escaláveis e confiáveis.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/sofiateixeirasilva" },
+      { "tipo": "GitHub", "valor": "github.com/sofiateixeira" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Engenharia da Computação",
+          "instituicao": "USP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2019
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Engenheira de Dados Sênior",
+          "empresa": "Mercado Livre",
+          "inicio": "2020-01-15T00:00:00Z",
+          "fim": null,
+          "descricao": "Arquitetura de soluções de Big Data, desenvolvimento de ETLs com Spark e Airflow, e gerenciamento de Data Lakes."
+        }
+      ],
+      "habilidades": ["Python", "Spark", "Airflow", "SQL", "BigQuery", "GCP"],
+      "idiomas": ["Português Nativo", "Inglês Fluente", "Espanhol Intermediário"]
+    }
+  },
+  {
+    
+    "nome": "Carla Mendes Ferreira",
+    "email": "carla.mendes.ferreira@yahoo.com",
+    "telefone": "+55 11 99173-4405",
+    "experiencia": "5 anos como Analista de QA",
+    "formacao": "Análise e Desenvolvimento de Sistemas - Unesp",
+    "resumo": "Analista de Qualidade de Software com foco em automação de testes e garantia de entrega de software de alta qualidade.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/carlamendesferreira" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Análise e Desenvolvimento de Sistemas",
+          "instituicao": "Unesp",
+          "nivel": "Graduação",
+          "ano_conclusao": 2020
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Analista de QA Pleno",
+          "empresa": "TOTVS",
+          "inicio": "2020-05-20T00:00:00Z",
+          "fim": null,
+          "descricao": "Criação e execução de planos de teste, desenvolvimento de scripts de automação com Selenium e Cypress, e reporte de bugs."
+        }
+      ],
+      "habilidades": ["Selenium", "Cypress", "JMeter", "Automação de Testes", "SQL", "Jira"],
+      "idiomas": ["Português Nativo", "Inglês Técnico"]
+    }
+  },
+  {
+    
+    "nome": "Tiago Barros Ferreira",
+    "email": "tiago.barros.ferreira@exemplo.com",
+    "telefone": "+55 11 98463-8821",
+    "experiencia": "7 anos como Engenheiro DevOps",
+    "formacao": "Sistemas de Informação - Mackenzie",
+    "resumo": "Profissional experiente em automação de infraestrutura, CI/CD e cultura DevOps para otimizar o ciclo de vida de desenvolvimento.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/tiagobarrosferreira" },
+      { "tipo": "GitHub", "valor": "github.com/tiagobarros" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Sistemas de Informação",
+          "instituicao": "Mackenzie",
+          "nivel": "Graduação",
+          "ano_conclusao": 2018
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Engenheiro DevOps Sênior",
+          "empresa": "Itaú Unibanco",
+          "inicio": "2018-10-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Implementação de pipelines de CI/CD com Jenkins/GitLab, gerenciamento de containers com Docker e Kubernetes, e automação de infraestrutura com Terraform."
+        }
+      ],
+      "habilidades": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD", "Ansible"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Eduarda Rocha Santos",
+    "email": "eduarda.rocha.santos@yahoo.com",
+    "telefone": "+55 11 91248-3376",
+    "experiencia": "2 anos como Desenvolvedora Frontend",
+    "formacao": "Sistemas para Internet - Fatec",
+    "resumo": "Desenvolvedora Frontend apaixonada por criar interfaces responsivas e performáticas com tecnologias modernas.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/eduardarocha" },
+      { "tipo": "GitHub", "valor": "github.com/edurocha" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Sistemas para Internet",
+          "instituicao": "Fatec",
+          "nivel": "Tecnólogo",
+          "ano_conclusao": 2023
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Desenvolvedora Frontend Júnior",
+          "empresa": "Globo.com",
+          "inicio": "2023-01-10T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de componentes reutilizáveis com React e TypeScript, e otimização de performance de websites."
+        }
+      ],
+      "habilidades": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Git"],
+      "idiomas": ["Português Nativo", "Inglês Intermediário"]
+    }
+  },
+  {
+    
+    "nome": "Ricardo Nunes Melo",
+    "email": "ricardo.nunes.melo@exemplo.com",
+    "telefone": "+55 11 91724-6658",
+    "experiencia": "8 anos como Cientista de Dados",
+    "formacao": "Estatística - USP",
+    "resumo": "Cientista de Dados com foco em Machine Learning e modelagem preditiva para resolver problemas de negócio.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardonunesmelo" },
+      { "tipo": "GitHub", "valor": "github.com/ricardmelo" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        { "curso": "Mestrado em Inteligência Artificial", "instituicao": "UFSCar", "nivel": "Pós-graduação", "ano_conclusao": 2019 },
+        { "curso": "Estatística", "instituicao": "USP", "nivel": "Graduação", "ano_conclusao": 2017 }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Cientista de Dados Especialista",
+          "empresa": "Google Brasil",
+          "inicio": "2018-02-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Liderança de projetos de Data Science, desenvolvimento de modelos de Machine Learning (classificação, regressão, clustering) e análise de dados complexos."
+        }
+      ],
+      "habilidades": ["Python", "R", "Scikit-learn", "TensorFlow", "SQL", "Tableau"],
+      "idiomas": ["Português Nativo", "Inglês Fluente"]
+    }
+  },
+  {
+    
+    "nome": "Natália Andrade Santos",
+    "email": "natália.andrade.santos@exemplo.com",
+    "telefone": "+55 11 93861-2940",
+    "experiencia": "1 ano como Analista de Suporte",
+    "formacao": "Gestão da Tecnologia da Informação - Anhembi Morumbi",
+    "resumo": "Profissional de TI em início de carreira, com foco em suporte técnico e resolução de problemas.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/nataliaandradesantos" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Gestão da Tecnologia da Informação",
+          "instituicao": "Anhembi Morumbi",
+          "nivel": "Tecnólogo",
+          "ano_conclusao": 2024
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Estagiária de Suporte Técnico",
+          "empresa": "Microsoft Brasil",
+          "inicio": "2024-01-15T00:00:00Z",
+          "fim": "2024-12-31T00:00:00Z",
+          "descricao": "Suporte a usuários, manutenção de hardware e software, e gerenciamento de tickets."
+        }
+      ],
+      "habilidades": ["Windows", "Office 365", "Hardware", "Troubleshooting", "Atendimento ao Cliente"],
+      "idiomas": ["Português Nativo", "Inglês Básico"]
+    }
+  },
+  {
+    
+    "nome": "João Pereira da Silva",
+    "email": "joão.pereira.da.silva@exemplo.com",
+    "telefone": "+55 11 93164-5539",
+    "experiencia": "10 anos como Arquiteto de Soluções",
+    "formacao": "Engenharia de Software - UFSCar",
+    "resumo": "Arquiteto de Soluções experiente em projetar sistemas distribuídos, escaláveis e de alta performance na nuvem.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/joaopereirasilva" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Engenharia de Software",
+          "instituicao": "UFSCar",
+          "nivel": "Graduação",
+          "ano_conclusao": 2015
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Arquiteto de Soluções Cloud",
+          "empresa": "Amazon Web Services",
+          "inicio": "2018-06-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenho de arquiteturas para clientes corporativos, definição de padrões técnicos e melhores práticas para desenvolvimento em nuvem AWS."
+        },
+        {
+          "cargo": "Desenvolvedor Sênior",
+          "empresa": "TechX",
+          "inicio": "2015-07-01T00:00:00Z",
+          "fim": "2018-05-31T00:00:00Z",
+          "descricao": "Desenvolvimento de aplicações Java com Spring Framework."
+        }
+      ],
+      "habilidades": ["Arquitetura de Microsserviços", "AWS", "Azure", "System Design", "Java", "TOGAF"],
+      "idiomas": ["Português Nativo", "Inglês Fluente"]
+    }
+  },
+  {
+    
+    "nome": "Lucas Ribeiro Pereira",
+    "email": "lucas.ribeiro.pereira@exemplo.com",
+    "telefone": "+55 11 92174-7563",
+    "experiencia": "Recém-formado",
+    "formacao": "Ciência da Computação - Unesp Rio Claro",
+    "resumo": "Recém-formado em Ciência da Computação, buscando uma oportunidade para iniciar minha carreira em desenvolvimento de software.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/lucasrpereira" },
+      { "tipo": "GitHub", "valor": "github.com/lucasrp" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Ciência da Computação",
+          "instituicao": "Unesp Rio Claro",
+          "nivel": "Graduação",
+          "ano_conclusao": 2025
+        }
+      ],
+      "experiencias": [],
+      "habilidades": ["Python", "Java", "C++", "SQL", "Git", "Estrutura de Dados"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Isabela Costa Ferreira",
+    "email": "isabela.costa.ferreira@exemplo.com",
+    "telefone": "+55 11 91973-8526",
+    "experiencia": "4 anos como Analista de Segurança da Informação",
+    "formacao": "Segurança da Informação - FIAP",
+    "resumo": "Analista de segurança focada em análise de vulnerabilidades, resposta a incidentes e conformidade.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/isabelacostaferreira" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Segurança da Informação",
+          "instituicao": "FIAP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2021
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Analista de Segurança Pleno",
+          "empresa": "PagSeguro",
+          "inicio": "2021-03-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Monitoramento de ameaças com SIEM, realização de pentests e implementação de políticas de segurança."
+        }
+      ],
+      "habilidades": ["SIEM", "Pentesting", "ISO 27001", "Firewall", "Análise de Vulnerabilidades"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Bruno Lima Pereira",
+    "email": "bruno.lima.pereira@exemplo.com",
+    "telefone": "+55 11 93617-9824",
+    "experiencia": "5 anos como Desenvolvedor Full Stack",
+    "formacao": "Engenharia de Software - PUC-SP",
+    "resumo": "Desenvolvedor Full Stack versátil, com experiência na criação de aplicações web completas, do backend ao frontend.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/brunolimadp" },
+      { "tipo": "GitHub", "valor": "github.com/brunolimadp" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Engenharia de Software",
+          "instituicao": "PUC-SP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2020
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Desenvolvedor Full Stack",
+          "empresa": "Embraer",
+          "inicio": "2020-08-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de sistemas internos utilizando Java/Spring no backend e Angular/TypeScript no frontend."
+        }
+      ],
+      "habilidades": ["Java", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "Docker"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Ana Souza da Silva",
+    "email": "ana.souza.da.silva@exemplo.com",
+    "telefone": "+55 11 93418-6029",
+    "experiencia": "3 anos como Analista de BI",
+    "formacao": "Sistemas de Informação - UFSCar",
+    "resumo": "Analista de Business Intelligence com habilidade para transformar dados em insights acionáveis através de dashboards e relatórios.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/anasouzasilva" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Sistemas de Informação",
+          "instituicao": "UFSCar",
+          "nivel": "Graduação",
+          "ano_conclusao": 2022
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Analista de BI",
+          "empresa": "Vale",
+          "inicio": "2022-06-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de dashboards em Power BI e Tableau, criação de consultas SQL complexas e processos de ETL."
+        }
+      ],
+      "habilidades": ["Power BI", "Tableau", "SQL", "ETL", "Data Warehousing", "Python"],
+      "idiomas": ["Português Nativo", "Inglês Intermediário"]
+    }
+  },
+  {
+    
+    "nome": "Otávio Carvalho da Silva",
+    "email": "otávio.carvalho.da.silva@exemplo.com",
+    "telefone": "+55 11 93912-6580",
+    "experiencia": "6 anos como Administrador de Banco de Dados",
+    "formacao": "Banco de Dados - Fatec",
+    "resumo": "DBA especializado em otimização de performance, backup/recovery e administração de bancos de dados relacionais e NoSQL.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/otaviocarvalhodba" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Banco de Dados",
+          "instituicao": "Fatec",
+          "nivel": "Tecnólogo",
+          "ano_conclusao": 2019
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "DBA Pleno",
+          "empresa": "IBM Brasil",
+          "inicio": "2019-11-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Administração de bancos de dados Oracle, SQL Server e MongoDB, garantindo performance e disponibilidade."
+        }
+      ],
+      "habilidades": ["Oracle", "SQL Server", "MongoDB", "Performance Tuning", "Backup & Recovery", "Linux"],
+      "idiomas": ["Português Nativo", "Inglês Técnico"]
+    }
+  },
+  {
+    
+    "nome": "Felipe Alves da Silva",
+    "email": "felipe.alves.da.silva@exemplo.com",
+    "telefone": "+55 11 92283-4016",
+    "experiencia": "2 anos como Desenvolvedor Mobile",
+    "formacao": "Ciência da Computação - Mackenzie",
+    "resumo": "Desenvolvedor Mobile com experiência na criação de aplicativos nativos para Android e iOS.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/felipealvesdev" },
+      { "tipo": "GitHub", "valor": "github.com/felipealvesdev" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Ciência da Computação",
+          "instituicao": "Mackenzie",
+          "nivel": "Graduação",
+          "ano_conclusao": 2023
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Desenvolvedor Mobile Júnior",
+          "empresa": "Whirlpool",
+          "inicio": "2023-05-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de aplicativos em Kotlin e Swift, integração com APIs e publicação nas lojas."
+        }
+      ],
+      "habilidades": ["Kotlin", "Swift", "Android SDK", "iOS SDK", "REST APIs", "Git"],
+      "idiomas": ["Português Nativo", "Inglês Intermediário"]
+    }
+  },
+  {
+    
+    "nome": "Mariana Gomes Melo",
+    "email": "mariana.gomes.melo@exemplo.com",
+    "telefone": "+55 11 91632-4980",
+    "experiencia": "4 anos como Product Owner",
+    "formacao": "Administração - FGV",
+    "resumo": "Product Owner ágil, focada em maximizar o valor do produto através da gestão de backlog e comunicação com stakeholders.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/marianagomesmelo" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Administração de Empresas",
+          "instituicao": "FGV",
+          "nivel": "Graduação",
+          "ano_conclusao": 2020
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Product Owner",
+          "empresa": "Petrobras",
+          "inicio": "2021-01-20T00:00:00Z",
+          "fim": null,
+          "descricao": "Definição da visão do produto, priorização do backlog, escrita de estórias de usuário e facilitação de cerimônias ágeis."
+        }
+      ],
+      "habilidades": ["Scrum", "Agile", "Product Backlog Management", "Jira", "Roadmap", "Comunicação"],
+      "idiomas": ["Português Nativo", "Inglês Fluente"]
+    }
+  },
+  {
+    
+    "nome": "Vanessa Lima Santos",
+    "email": "vanessa.lima.santos@exemplo.com",
+    "telefone": "+55 11 92381-5974",
+    "experiencia": "5 anos como Scrum Master",
+    "formacao": "Psicologia - USP",
+    "resumo": "Scrum Master certificada, dedicada a facilitar a adoção de práticas ágeis e a remover impedimentos para as equipes de desenvolvimento.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessalimasantos" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Psicologia",
+          "instituicao": "USP",
+          "nivel": "Graduação",
+          "ano_conclusao": 2018
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Scrum Master",
+          "empresa": "Lopes S/A",
+          "inicio": "2020-03-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Condução das cerimônias do Scrum, coaching da equipe em práticas ágeis e colaboração com o Product Owner."
+        }
+      ],
+      "habilidades": ["Scrum", "Kanban", "Agile Coaching", "Jira", "Resolução de Conflitos"],
+      "idiomas": ["Português Nativo", "Inglês Avançado"]
+    }
+  },
+  {
+    
+    "nome": "Gabriela Santos Santos",
+    "email": "gabriela.santos.santos@exemplo.com",
+    "telefone": "+55 11 91826-4735",
+    "experiencia": "3 anos como Engenheira de Machine Learning",
+    "formacao": "Ciência da Computação - ITA",
+    "resumo": "Engenheira de ML com experiência em colocar modelos de machine learning em produção (MLOps).",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/gabrielasantosml" },
+      { "tipo": "GitHub", "valor": "github.com/gssantos" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Ciência da Computação",
+          "instituicao": "ITA",
+          "nivel": "Graduação",
+          "ano_conclusao": 2022
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Engenheira de Machine Learning",
+          "empresa": "Gomes",
+          "inicio": "2022-09-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de pipelines de MLOps, deployment de modelos em produção e monitoramento de performance."
+        }
+      ],
+      "habilidades": ["Python", "TensorFlow", "PyTorch", "MLOps", "Kubeflow", "Docker"],
+      "idiomas": ["Português Nativo", "Inglês Fluente"]
+    }
+  },
+  {
+    
+    "nome": "Felipe Alves Melo",
+    "email": "felipe.alves.melo@exemplo.com",
+    "telefone": "+55 11 93614-5078",
+    "experiencia": "Especialista em Redes",
+    "formacao": "Redes de Computadores - Senac",
+    "resumo": "Especialista em redes com certificação Cisco e ampla experiência em configuração de infraestrutura de rede corporativa.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/felipealvesmelo" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Redes de Computadores",
+          "instituicao": "Senac",
+          "nivel": "Tecnólogo",
+          "ano_conclusao": 2017
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Especialista em Redes Sênior",
+          "empresa": "Campos Costa - EI",
+          "inicio": "2018-01-15T00:00:00Z",
+          "fim": null,
+          "descricao": "Gerenciamento de switches, roteadores e firewalls Cisco, configuração de VPNs e monitoramento de tráfego de rede."
+        }
+      ],
+      "habilidades": ["Cisco IOS", "Routing (BGP, OSPF)", "Switching", "Firewall", "VPN", "Network Security"],
+      "idiomas": ["Português Nativo", "Inglês Técnico"]
+    }
+  },
+  {
+    
+    "nome": "Henrique Ferreira da Silva",
+    "email": "henrique.ferreira.da.silva@exemplo.com",
+    "telefone": "+55 11 94186-5207",
+    "experiencia": "1 ano como Desenvolvedor de BI",
+    "formacao": "Engenharia da Computação - FEI",
+    "resumo": "Jovem profissional focado em Business Intelligence, com conhecimento em ferramentas de ETL e visualização de dados.",
+    "contatos": [
+      { "tipo": "LinkedIn", "valor": "linkedin.com/in/hferreirasilva" },
+      { "tipo": "GitHub", "valor": "github.com/hferreirasilva" }
+    ],
+    "curriculo": {
+      "formacoes": [
+        {
+          "curso": "Engenharia da Computação",
+          "instituicao": "FEI",
+          "nivel": "Graduação",
+          "ano_conclusao": 2024
+        }
+      ],
+      "experiencias": [
+        {
+          "cargo": "Desenvolvedor de BI Júnior",
+          "empresa": "Ferreira",
+          "inicio": "2024-03-01T00:00:00Z",
+          "fim": null,
+          "descricao": "Desenvolvimento de processos de extração, transformação e carga (ETL) e criação de relatórios em Power BI."
+        }
+      ],
+      "habilidades": ["SQL", "ETL", "Power BI", "Python", "Data Modeling"],
+      "idiomas": ["Português Nativo", "Inglês Intermediário"]
+    }
+  }
+]

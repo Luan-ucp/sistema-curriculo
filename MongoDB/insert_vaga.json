@@ -1,0 +1,851 @@
+[
+  {
+    
+    "empregador": {      
+      "razao_social": "Whirlpool"
+    },
+    "localizacao": {
+      "cidade": "Rio Claro",
+      "estado": "SP"
+    },
+    "titulo": "Desenvolvedor Frontend",
+    "descricao": "Conduzir projetos de ciência de dados, desde a coleta e limpeza até a modelagem e visualização.",
+    "tipo_contrato": "CLT",
+    "salario": 9020.00,
+    "habilidades": ["React", "JavaScript", "HTML5", "CSS3", "Git"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Unesp"
+    },
+    "localizacao": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "titulo": "Scrum Master",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Estágio",
+    "salario": 3431.00,
+    "habilidades": ["Agile", "Scrum", "Kanban", "Jira", "Confluence"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Cavalcanti"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Administrador de Banco de Dados",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "CLT",
+    "salario": 10362.00,
+    "habilidades": ["SQL Server", "PostgreSQL", "MongoDB", "Performance Tuning"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Campos S.A."
+    },
+    "localizacao": {
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    "titulo": "Cientista de Dados",
+    "descricao": "Prestar suporte técnico a usuários, solucionando problemas de hardware e software.",
+    "tipo_contrato": "Estágio",
+    "salario": 14653.00,
+    "habilidades": ["Python", "R", "SQL", "Pandas", "Scikit-learn"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Ramosid_usuario - ME"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Desenvolvedor Fullstack",
+    "descricao": "Projetar e treinar modelos de machine learning para resolver problemas complexos de negócio.",
+    "tipo_contrato": "Temporário",
+    "salario": 5740.00,
+    "habilidades": ["Node.js", "React", "Python", "MongoDB", "AWS"],
+    "idiomas": ["Inglês Intermediário", "Espanhol Básico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "da Paz Ramos S/A"
+    },
+    "localizacao": {
+      "cidade": "Curitiba",
+      "estado": "PR"
+    },
+    "titulo": "Especialista em Redes",
+    "descricao": "Prestar suporte técnico a usuários, solucionando problemas de hardware e software.",
+    "tipo_contrato": "PJ",
+    "salario": 7875.00,
+    "habilidades": ["Cisco", "Routing", "Switching", "Firewall", "VPN"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Azevedo"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Infra TI",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "Temporário",
+    "salario": 11742.00,
+    "habilidades": ["Linux", "Windows Server", "VMware", "Networking"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Ramos Araújo - EI"
+    },
+    "localizacao": {
+      "cidade": "Brasília",
+      "estado": "DF"
+    },
+    "titulo": "Desenvolvedor Fullstack",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 12515.00,
+    "habilidades": ["Java", "Spring Boot", "Angular", "PostgreSQL"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Peixoto"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Desenvolvedor Backend",
+    "descricao": "Coordenar equipes de desenvolvimento, assegurando a entrega de projetos no prazo e orçamento.",
+    "tipo_contrato": "Estágio",
+    "salario": 6835.00,
+    "habilidades": ["Python", "Django", "Flask", "REST APIs", "Docker"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Nogueira"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Arquiteto de Soluções",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "PJ",
+    "salario": 3493.00,
+    "habilidades": ["AWS", "Microservices", "System Design", "TOGAF"],
+    "idiomas": ["Inglês Fluente"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Porto - ME"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Especialista em Cloud Computing",
+    "descricao": "Coordenar equipes de desenvolvimento, assegurando a entrega de projetos no prazo e orçamento.",
+    "tipo_contrato": "Temporário",
+    "salario": 10707.00,
+    "habilidades": ["AWS", "Azure", "GCP", "Kubernetes", "Terraform"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Duarte Silveira Ltda."
+    },
+    "localizacao": {
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    "titulo": "Cientista de Dados",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Temporário",
+    "salario": 4106.00,
+    "habilidades": ["Machine Learning", "Python", "TensorFlow", "SQL"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Costela Ltda."
+    },
+    "localizacao": {
+      "cidade": "Curitiba",
+      "estado": "PR"
+    },
+    "titulo": "Cientista de Dados",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "Temporário",
+    "salario": 8034.00,
+    "habilidades": ["Python", "Pandas", "NumPy", "Matplotlib", "SQL"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Porto Alegre",
+      "estado": "RS"
+    },
+    "titulo": "Engenheiro DevOps",
+    "descricao": "Responsável por desenvolver e manter aplicações escaláveis, garantindo alta performance e segurança.",
+    "tipo_contrato": "Estágio",
+    "salario": 11255.00,
+    "habilidades": ["Docker", "Kubernetes", "Jenkins", "CI/CD", "Ansible"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Designer de UX/UI",
+    "descricao": "Projetar e treinar modelos de machine learning para resolver problemas complexos de negócio.",
+    "tipo_contrato": "PJ",
+    "salario": 8110.00,
+    "habilidades": ["Figma", "Adobe XD", "User Research", "Prototyping"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    "titulo": "Arquiteto de Soluções",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Temporário",
+    "salario": 10633.00,
+    "habilidades": ["Microservices", "Event-Driven Architecture", "Cloud", "API Design"],
+    "idiomas": ["Inglês Avançado", "Espanhol Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Analista de Sistemas",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 9535.00,
+    "habilidades": ["UML", "SQL", "Requirements Analysis", "System Modeling"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Product Owner",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "PJ",
+    "salario": 8160.00,
+    "habilidades": ["Agile", "Scrum", "Product Backlog Management", "Roadmap"],
+    "idiomas": ["Inglês Fluente"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Whirlpool"
+    },
+    "localizacao": {
+      "cidade": "Rio Claro",
+      "estado": "SP"
+    },
+    "titulo": "Engenheiro DevOps",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "CLT",
+    "salario": 7634.00,
+    "habilidades": ["AWS", "Terraform", "CI/CD", "Python Scripting"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    "titulo": "Designer de UX/UI",
+    "descricao": "Atuar na análise, modelagem e otimização de processos de dados, criando pipelines eficientes.",
+    "tipo_contrato": "Temporário",
+    "salario": 4757.00,
+    "habilidades": ["Figma", "Sketch", "Wireframing", "Usability Testing"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Porto Alegre",
+      "estado": "RS"
+    },
+    "titulo": "Administrador de Banco de Dados",
+    "descricao": "Atuar na análise, modelagem e otimização de processos de dados, criando pipelines eficientes.",
+    "tipo_contrato": "Temporário",
+    "salario": 3599.00,
+    "habilidades": ["Oracle", "MySQL", "Backup & Recovery", "SQL Tuning"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    "titulo": "Especialista em Redes",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 8036.00,
+    "habilidades": ["TCP/IP", "BGP", "OSPF", "Juniper", "Network Security"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Engenheiro de Machine Learning",
+    "descricao": "Coordenar equipes de desenvolvimento, assegurando a entrega de projetos no prazo e orçamento.",
+    "tipo_contrato": "PJ",
+    "salario": 11317.00,
+    "habilidades": ["Python", "TensorFlow", "PyTorch", "MLOps", "Kubeflow"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Amazon Brasil"
+    },
+    "localizacao": {
+      "cidade": "Fortaleza",
+      "estado": "CE"
+    },
+    "titulo": "Desenvolvedor Backend",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 11004.00,
+    "habilidades": ["Java", "Spring", "Microservices", "Kafka", "DynamoDB"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Curitiba",
+      "estado": "PR"
+    },
+    "titulo": "Engenheiro DevOps",
+    "descricao": "Desenvolver interfaces intuitivas e responsivas, focadas na melhor experiência do usuário.",
+    "tipo_contrato": "CLT",
+    "salario": 4181.00,
+    "habilidades": ["CI/CD", "GitLab", "Docker", "Ansible", "Scripting"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "titulo": "Especialista em Cloud Computing",
+    "descricao": "Prestar suporte técnico a usuários, solucionando problemas de hardware e software.",
+    "tipo_contrato": "Estágio",
+    "salario": 3145.00,
+    "habilidades": ["IBM Cloud", "AWS", "Azure", "Cloud Security"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Analista de BI",
+    "descricao": "Desenvolver interfaces intuitivas e responsivas, focadas na melhor experiência do usuário.",
+    "tipo_contrato": "Temporário",
+    "salario": 12205.00,
+    "habilidades": ["Power BI", "Tableau", "SQL", "ETL", "Data Warehousing"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    "titulo": "Analista de Qualidade de Software",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 6988.00,
+    "habilidades": ["Selenium", "Cypress", "JMeter", "Test Planning", "Bug Tracking"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Itaú Unibanco"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Arquiteto de Soluções",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "PJ",
+    "salario": 12254.00,
+    "habilidades": ["System Design", "Cloud Architecture", "Java", "API Gateway"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Microsoft Brasil"
+    },
+    "localizacao": {
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    "titulo": "Infra TI",
+    "descricao": "Projetar e treinar modelos de machine learning para resolver problemas complexos de negócio.",
+    "tipo_contrato": "Temporário",
+    "salario": 9240.00,
+    "habilidades": ["Active Directory", "Windows Server", "Azure", "System Center"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Globo.com"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Engenheiro DevOps",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Estágio",
+    "salario": 14940.00,
+    "habilidades": ["Go", "Kubernetes", "Prometheus", "GCP", "CI/CD"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Google Brasil"
+    },
+    "localizacao": {
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    "titulo": "Arquiteto de Soluções",
+    "descricao": "Atuar na análise, modelagem e otimização de processos de dados, criando pipelines eficientes.",
+    "tipo_contrato": "Temporário",
+    "salario": 12733.00,
+    "habilidades": ["GCP", "BigQuery", "Kubernetes Engine", "Architecture Design"],
+    "idiomas": ["Inglês Fluente"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Petrobras"
+    },
+    "localizacao": {
+      "cidade": "Porto Alegre",
+      "estado": "RS"
+    },
+    "titulo": "Arquiteto de Soluções",
+    "descricao": "Desenvolver interfaces intuitivas e responsivas, focadas na melhor experiência do usuário.",
+    "tipo_contrato": "CLT",
+    "salario": 9882.00,
+    "habilidades": ["Solution Architecture", "Enterprise Integration", "Security"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Ferreira"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Desenvolvedor Fullstack",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Temporário",
+    "salario": 8892.00,
+    "habilidades": ["JavaScript", "Vue.js", "PHP", "Laravel", "MySQL"],
+    "idiomas": ["Inglês Básico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "titulo": "Administrador de Banco de Dados",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Temporário",
+    "salario": 7605.00,
+    "habilidades": ["DB2", "SQL", "Performance", "Security"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    "titulo": "Desenvolvedor Backend",
+    "descricao": "Responsável por desenvolver e manter aplicações escaláveis, garantindo alta performance e segurança.",
+    "tipo_contrato": "PJ",
+    "salario": 3396.00,
+    "habilidades": ["AdvPL", "Protheus", "SQL", "API"],
+    "idiomas": ["Português"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Petrobras"
+    },
+    "localizacao": {
+      "cidade": "Recife",
+      "estado": "PE"
+    },
+    "titulo": "Especialista em Redes",
+    "descricao": "Responsável por desenvolver e manter aplicações escaláveis, garantindo alta performance e segurança.",
+    "tipo_contrato": "Estágio",
+    "salario": 7866.00,
+    "habilidades": ["Redes Industriais", "SCADA", "Segurança de Redes", "Cisco"],
+    "idiomas": ["Inglês Técnico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "IBM Brasil"
+    },
+    "localizacao": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "titulo": "Especialista em Redes",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Temporário",
+    "salario": 4913.00,
+    "habilidades": ["Networking", "Security", "Firewall", "VPN"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Microsoft Brasil"
+    },
+    "localizacao": {
+      "cidade": "Porto Alegre",
+      "estado": "RS"
+    },
+    "titulo": "Analista de Suporte Técnico",
+    "descricao": "Administrar e otimizar bancos de dados relacionais e não relacionais, garantindo disponibilidade.",
+    "tipo_contrato": "Temporário",
+    "salario": 9016.00,
+    "habilidades": ["Windows", "Office 365", "Active Directory", "Suporte ao Cliente"],
+    "idiomas": ["Inglês Intermediário", "Espanhol Básico"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "TOTVS"
+    },
+    "localizacao": {
+      "cidade": "Belo Horizonte",
+      "estado": "MG"
+    },
+    "titulo": "Analista de BI",
+    "descricao": "Coordenar equipes de desenvolvimento, assegurando a entrega de projetos no prazo e orçamento.",
+    "tipo_contrato": "Estágio",
+    "salario": 4122.00,
+    "habilidades": ["Fluig", "SQL", "ETL", "Dashboard Design"],
+    "idiomas": ["Português"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Amazon Brasil"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Desenvolvedor Backend",
+    "descricao": "Projetar e treinar modelos de machine learning para resolver problemas complexos de negócio.",
+    "tipo_contrato": "CLT",
+    "salario": 11319.00,
+    "habilidades": ["Java", "Python", "AWS Lambda", "Microservices", "API Gateway"],
+    "idiomas": ["Inglês Fluente"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Mercado Livre"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Analista de BI",
+    "descricao": "Conduzir projetos de ciência de dados, desde a coleta e limpeza até a modelagem e visualização.",
+    "tipo_contrato": "Temporário",
+    "salario": 14391.00,
+    "habilidades": ["SQL", "BigQuery", "Tableau", "Data Analysis"],
+    "idiomas": ["Espanhol Avançado", "Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Petrobras"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Cientista de Dados",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "PJ",
+    "salario": 14156.00,
+    "habilidades": ["Python", "Geospatial Analysis", "Time Series", "Machine Learning"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Globo.com"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Engenheiro de Dados",
+    "descricao": "Projetar e treinar modelos de machine learning para resolver problemas complexos de negócio.",
+    "tipo_contrato": "CLT",
+    "salario": 9396.00,
+    "habilidades": ["Spark", "Airflow", "Kafka", "Data Lake", "GCP"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Globo.com"
+    },
+    "localizacao": {
+      "cidade": "Salvador",
+      "estado": "BA"
+    },
+    "titulo": "Engenheiro de Machine Learning",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "CLT",
+    "salario": 11192.00,
+    "habilidades": ["MLOps", "Kubeflow", "Python", "Recommender Systems"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Vale"
+    },
+    "localizacao": {
+      "cidade": "São Paulo",
+      "estado": "SP"
+    },
+    "titulo": "Analista de BI",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 13471.00,
+    "habilidades": ["Power BI", "Data Analysis", "SQL", "SAP"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Embraer"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Especialista em Redes",
+    "descricao": "Desenvolver soluções em nuvem utilizando AWS, Azure ou GCP, garantindo escalabilidade e confiabilidade.",
+    "tipo_contrato": "Estágio",
+    "salario": 11234.00,
+    "habilidades": ["Network Administration", "Security", "Cisco"],
+    "idiomas": ["Inglês Avançado"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Gomes"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Analista de Suporte Técnico",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "PJ",
+    "salario": 12804.00,
+    "habilidades": ["Troubleshooting", "Customer Service", "Hardware", "Software"],
+    "idiomas": ["Português"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Campos Costa - EI"
+    },
+    "localizacao": {
+      "cidade": "Rio de Janeiro",
+      "estado": "RJ"
+    },
+    "titulo": "Engenheiro DevOps",
+    "descricao": "Prestar suporte técnico a usuários, solucionando problemas de hardware e software.",
+    "tipo_contrato": "PJ",
+    "salario": 4872.00,
+    "habilidades": ["Automation", "CI/CD", "Docker", "Ansible"],
+    "idiomas": ["Inglês Intermediário"]
+  },
+  {
+    
+    "empregador": {
+      
+      "razao_social": "Lopes S/A"
+    },
+    "localizacao": {
+      "cidade": "Florianópolis",
+      "estado": "SC"
+    },
+    "titulo": "Analista de Segurança da Informação",
+    "descricao": "Implementar e monitorar práticas de segurança da informação, mitigando riscos cibernéticos.",
+    "tipo_contrato": "Temporário",
+    "salario": 10136.00,
+    "habilidades": ["SIEM", "Pentesting", "Firewall Management", "ISO 27001"],
+    "idiomas": ["Inglês Avançado"]
+  }
+]

@@ -1,0 +1,2062 @@
+[
+  {
+
+    "nome": "Cavalcanti",
+    "email": "Cavalcanti@exemplo.com",
+    "senha_hash": "a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-01-20T10:00:00Z", "ip": "192.168.1.1", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Cavalcanti" }
+  },
+  {
+
+    "nome": "Campos S.A.",
+    "email": "CamposSA@exemplo.com",
+    "senha_hash": "b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-03-15T14:30:00Z", "ip": "203.0.113.25", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Campos S.A." }
+  },
+  {
+
+    "nome": "Ramos - ME",
+    "email": "RamosME@exemplo.com",
+    "senha_hash": "c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-05-10T09:00:00Z", "ip": "198.51.100.10", "sucesso": false },
+      { "data_hora": "2025-05-10T09:01:00Z", "ip": "198.51.100.10", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Ramos - ME" }
+  },
+  {
+
+    "nome": "da Paz Ramos S/A",
+    "email": "daPazRamosSA@exemplo.com",
+    "senha_hash": "d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-08-22T18:45:00Z", "ip": "200.100.50.2", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "da Paz Ramos S/A" }
+  },
+  {
+
+    "nome": "Azevedo",
+    "email": "Azevedo@exemplo.com",
+    "senha_hash": "e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Azevedo" }
+  },
+  {
+
+    "nome": "Ramos Araújo - EI",
+    "email": "RamosAraujoEI@exemplo.com",
+    "senha_hash": "f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-09-01T11:20:00Z", "ip": "189.123.45.67", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Ramos Araújo - EI" }
+  },
+  {
+
+    "nome": "Peixoto",
+    "email": "Peixoto@exemplo.com",
+    "senha_hash": "g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Peixoto" }
+  },
+  {
+
+    "nome": "Nogueira",
+    "email": "Nogueira@exemplo.com",
+    "senha_hash": "h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-10-05T22:10:00Z", "ip": "177.88.99.11", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Nogueira" }
+  },
+  {
+
+    "nome": "Porto - ME",
+    "email": "PortoME@exemplo.com",
+    "senha_hash": "i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Porto - ME" }
+  },
+  {
+
+    "nome": "Duarte Silveira Ltda.",
+    "email": "DuarteSilveiraLtda@exemplo.com",
+    "senha_hash": "j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2024-12-12T12:00:00Z", "ip": "199.200.201.202", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Duarte Silveira Ltda." }
+  },
+  {
+
+    "nome": "Costela Ltda.",
+    "email": "CostelaLtda@exemplo.com",
+    "senha_hash": "k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Costela Ltda." }
+  },
+  {
+
+    "nome": "IBM Brasil",
+    "email": "IBM-Brasil@exemplo.com",
+    "senha_hash": "l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-07-18T16:05:00Z", "ip": "187.1.2.3", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "IBM Brasil" }
+  },
+  {
+
+    "nome": "TOTVS",
+    "email": "TOTVS@exemplo.com",
+    "senha_hash": "m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "TOTVS" }
+  },
+  {
+
+    "nome": "Amazon Brasil",
+    "email": "AmazonBrasil@exemplo.com",
+    "senha_hash": "n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-09-30T23:59:00Z", "ip": "201.202.203.204", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Amazon Brasil" }
+  },
+  {
+
+    "nome": "Itaú Unibanco",
+    "email": "ItauUnibanco@exemplo.com",
+    "senha_hash": "o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Itaú Unibanco" }
+  },
+  {
+
+    "nome": "Microsoft Brasil",
+    "email": "MicrosoftBrasil@exemplo.com",
+    "senha_hash": "p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-02-28T08:30:00Z", "ip": "170.1.1.1", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Microsoft Brasil" }
+  },
+  {
+
+    "nome": "Globo.com",
+    "email": "GloboCom@exemplo.com",
+    "senha_hash": "q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Globo.com" }
+  },
+  {
+
+    "nome": "Google Brasil",
+    "email": "GoogleBrasil@exemplo.com",
+    "senha_hash": "r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-10-10T10:10:10Z", "ip": "8.8.8.8", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Google Brasil" }
+  },
+  {
+
+    "nome": "Petrobras",
+    "email": "Petrobras@exemplo.com",
+    "senha_hash": "s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Petrobras" }
+  },
+  {
+
+    "nome": "Ferreira",
+    "email": "Ferreira@exemplo.com",
+    "senha_hash": "t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Ferreira" }
+  },
+  {
+
+    "nome": "Mercado Livre",
+    "email": "MercadoLivre@exemplo.com",
+    "senha_hash": "u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-06-25T13:00:00Z", "ip": "186.200.10.1", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Mercado Livre" }
+  },
+  {
+
+    "nome": "Vale",
+    "email": "Vale@exemplo.com",
+    "senha_hash": "v2w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Vale" }
+  },
+  {
+
+    "nome": "Embraer",
+    "email": "Embraer@exemplo.com",
+    "senha_hash": "w3x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Embraer" }
+  },
+  {
+
+    "nome": "Gomes",
+    "email": "Gomes@exemplo.com",
+    "senha_hash": "x4y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Gomes" }
+  },
+  {
+
+    "nome": "Campos Costa - EI",
+    "email": "CamposCostaEI@exemplo.com",
+    "senha_hash": "y5z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-04-01T07:00:00Z", "ip": "177.150.100.50", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Campos Costa - EI" }
+  },
+  {
+
+    "nome": "Lopes S/A",
+    "email": "LopesSA@exemplo.com",
+    "senha_hash": "z6a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Lopes S/A" }
+  },
+  {
+
+    "nome": "Whirlpool",
+    "email": "Whirlpool@exemplo.com",
+    "senha_hash": "a7b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "Whirlpool" }
+  },
+  {
+
+    "nome": "Unesp",
+    "email": "Unesp@exemplo.com",
+    "senha_hash": "b8c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-08-19T19:21:00Z", "ip": "192.168.0.101", "sucesso": false },
+      { "data_hora": "2025-08-19T19:22:00Z", "ip": "192.168.0.101", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Unesp" }
+  },
+  {
+
+    "nome": "PagSeguro",
+    "email": "PagSeguro@exemplo.com",
+    "senha_hash": "c9d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8",
+    "perfil": "EMPREGADOR",
+    "logins": [],
+    "empregador": {  "razao_social": "PagSeguro" }
+  },
+  {
+
+    "nome": "Nubank",
+    "email": "Nubank@exemplo.com",
+    "senha_hash": "d0e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9",
+    "perfil": "EMPREGADOR",
+    "logins": [
+      { "data_hora": "2025-10-01T15:00:00Z", "ip": "208.67.222.222", "sucesso": true }
+    ],
+    "empregador": {  "razao_social": "Nubank" }
+  },
+  {
+
+    "nome": "Henrique Ferreira Santos",
+    "email": "henrique.ferreira.santos@exemplo.com",
+    "senha_hash": "e1f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-10-12T20:00:00Z", "ip": "200.100.50.3", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "4 anos como Desenvolvedor Backend",
+      "formacao": "Ciência da Computação - UNICAMP",
+      "resumo": "Desenvolvedor Backend com sólida experiência em arquitetura de microsserviços e soluções em nuvem.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/henriqueferreirasantos" },
+        { "tipo": "GitHub", "valor": "github.com/hfsantos" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Ciência da Computação", "instituicao": "UNICAMP", "nivel": "Graduação", "ano_conclusao": 2021 }
+        ],
+        "experiencias": [
+          { "cargo": "Desenvolvedor Backend Pleno", "empresa": "InovaTech", "inicio": "2021-08-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento e manutenção de APIs RESTful com Node.js, Python e integração com serviços AWS." }
+        ],
+        "habilidades": ["Node.js", "Python", "MongoDB", "Docker", "AWS", "SQL"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Pereira",
+    "email": "paula.moreira.pereira@exemplo.com",
+    "senha_hash": "f2g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "3 anos como Designer UX/UI",
+      "formacao": "Design Digital - FIAP",
+      "resumo": "Designer focada em criar experiências de usuário intuitivas e acessíveis para plataformas web e mobile.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/paulamoreirapereira" },
+        { "tipo": "Behance", "valor": "behance.net/paulamoreira" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Design Digital", "instituicao": "FIAP", "nivel": "Graduação", "ano_conclusao": 2022 }
+        ],
+        "experiencias": [
+          { "cargo": "UX/UI Designer", "empresa": "Nubank", "inicio": "2022-03-01T00:00:00Z", "fim": null, "descricao": "Responsável pela pesquisa com usuários, criação de wireframes, protótipos interativos e design systems." }
+        ],
+        "habilidades": ["Figma", "Adobe XD", "User Research", "Prototipação", "Design System"],
+        "idiomas": ["Português Nativo", "Inglês Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira da Silva",
+    "email": "sofia.teixeira.da.silva@exemplo.com",
+    "senha_hash": "g3h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-09-20T14:15:00Z", "ip": "189.123.45.68", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "6 anos como Engenheira de Dados",
+      "formacao": "Engenharia da Computação - USP",
+      "resumo": "Especialista em construir e otimizar pipelines de dados escaláveis e confiáveis.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/sofiateixeirasilva" },
+        { "tipo": "GitHub", "valor": "github.com/sofiateixeira" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Engenharia da Computação", "instituicao": "USP", "nivel": "Graduação", "ano_conclusao": 2019 }
+        ],
+        "experiencias": [
+          { "cargo": "Engenheira de Dados Sênior", "empresa": "Mercado Livre", "inicio": "2020-01-15T00:00:00Z", "fim": null, "descricao": "Arquitetura de soluções de Big Data, desenvolvimento de ETLs com Spark e Airflow, e gerenciamento de Data Lakes." }
+        ],
+        "habilidades": ["Python", "Spark", "Airflow", "SQL", "BigQuery", "GCP"],
+        "idiomas": ["Português Nativo", "Inglês Fluente", "Espanhol Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Carla Mendes Ferreira",
+    "email": "carla.mendes.ferreira@yahoo.com",
+    "senha_hash": "h4i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "5 anos como Analista de QA",
+      "formacao": "Análise e Desenvolvimento de Sistemas - Unesp",
+      "resumo": "Analista de Qualidade de Software com foco em automação de testes e garantia de entrega de software de alta qualidade.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/carlamendesferreira" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Análise e Desenvolvimento de Sistemas", "instituicao": "Unesp", "nivel": "Graduação", "ano_conclusao": 2020 }
+        ],
+        "experiencias": [
+          { "cargo": "Analista de QA Pleno", "empresa": "TOTVS", "inicio": "2020-05-20T00:00:00Z", "fim": null, "descricao": "Criação e execução de planos de teste, desenvolvimento de scripts de automação com Selenium e Cypress, e reporte de bugs." }
+        ],
+        "habilidades": ["Selenium", "Cypress", "JMeter", "Automação de Testes", "SQL", "Jira"],
+        "idiomas": ["Português Nativo", "Inglês Técnico"]
+      }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros Ferreira",
+    "email": "tiago.barros.ferreira@exemplo.com",
+    "senha_hash": "i5j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-07-07T07:07:00Z", "ip": "177.88.99.12", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "7 anos como Engenheiro DevOps",
+      "formacao": "Sistemas de Informação - Mackenzie",
+      "resumo": "Profissional experiente em automação de infraestrutura, CI/CD e cultura DevOps para otimizar o ciclo de vida de desenvolvimento.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/tiagobarrosferreira" },
+        { "tipo": "GitHub", "valor": "github.com/tiagobarros" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Sistemas de Informação", "instituicao": "Mackenzie", "nivel": "Graduação", "ano_conclusao": 2018 }
+        ],
+        "experiencias": [
+          { "cargo": "Engenheiro DevOps Sênior", "empresa": "Itaú Unibanco", "inicio": "2018-10-01T00:00:00Z", "fim": null, "descricao": "Implementação de pipelines de CI/CD com Jenkins/GitLab, gerenciamento de containers com Docker e Kubernetes, e automação de infraestrutura com Terraform." }
+        ],
+        "habilidades": ["AWS", "Kubernetes", "Docker", "Terraform", "CI/CD", "Ansible"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Santos",
+    "email": "eduarda.rocha.santos@yahoo.com",
+    "senha_hash": "j6k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "2 anos como Desenvolvedora Frontend",
+      "formacao": "Sistemas para Internet - Fatec",
+      "resumo": "Desenvolvedora Frontend apaixonada por criar interfaces responsivas e performáticas com tecnologias modernas.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/eduardarocha" },
+        { "tipo": "GitHub", "valor": "github.com/edurocha" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Sistemas para Internet", "instituicao": "Fatec", "nivel": "Tecnólogo", "ano_conclusao": 2023 }
+        ],
+        "experiencias": [
+          { "cargo": "Desenvolvedora Frontend Júnior", "empresa": "Globo.com", "inicio": "2023-01-10T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de componentes reutilizáveis com React e TypeScript, e otimização de performance de websites." }
+        ],
+        "habilidades": ["React", "TypeScript", "JavaScript", "HTML5", "CSS3", "Git"],
+        "idiomas": ["Português Nativo", "Inglês Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes Melo",
+    "email": "ricardo.nunes.melo@exemplo.com",
+    "senha_hash": "o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-01-11T11:11:11Z", "ip": "187.1.2.4", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "8 anos como Cientista de Dados",
+      "formacao": "Estatística - USP",
+      "resumo": "Cientista de Dados com foco em Machine Learning e modelagem preditiva para resolver problemas de negócio.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardonunesmelo" },
+        { "tipo": "GitHub", "valor": "github.com/ricardmelo" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Mestrado em Inteligência Artificial", "instituicao": "UFSCar", "nivel": "Pós-graduação", "ano_conclusao": 2019 },
+          { "curso": "Estatística", "instituicao": "USP", "nivel": "Graduação", "ano_conclusao": 2017 }
+        ],
+        "experiencias": [
+          { "cargo": "Cientista de Dados Especialista", "empresa": "Google Brasil", "inicio": "2018-02-01T00:00:00Z", "fim": null, "descricao": "Liderança de projetos de Data Science, desenvolvimento de modelos de Machine Learning (classificação, regressão, clustering) e análise de dados complexos." }
+        ],
+        "habilidades": ["Python", "R", "Scikit-learn", "TensorFlow", "SQL", "Tableau"],
+        "idiomas": ["Português Nativo", "Inglês Fluente"]
+      }
+    }
+  },
+  {
+
+    "nome": "Natália Andrade Santos",
+    "email": "natália.andrade.santos@exemplo.com",
+    "senha_hash": "p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "1 ano como Analista de Suporte",
+      "formacao": "Gestão da Tecnologia da Informação - Anhembi Morumbi",
+      "resumo": "Profissional de TI em início de carreira, com foco em suporte técnico e resolução de problemas.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/nataliaandradesantos" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Gestão da Tecnologia da Informação", "instituicao": "Anhembi Morumbi", "nivel": "Tecnólogo", "ano_conclusao": 2024 }
+        ],
+        "experiencias": [
+          { "cargo": "Estagiária de Suporte Técnico", "empresa": "Microsoft Brasil", "inicio": "2024-01-15T00:00:00Z", "fim": "2024-12-31T00:00:00Z", "descricao": "Suporte a usuários, manutenção de hardware e software, e gerenciamento de tickets." }
+        ],
+        "habilidades": ["Windows", "Office 365", "Hardware", "Troubleshooting", "Atendimento ao Cliente"],
+        "idiomas": ["Português Nativo", "Inglês Básico"]
+      }
+    }
+  },
+  {
+
+    "nome": "João Pereira da Silva",
+    "email": "joão.pereira.da.silva@exemplo.com",
+    "senha_hash": "r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-08-08T08:08:08Z", "ip": "201.202.203.205", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "10 anos como Arquiteto de Soluções",
+      "formacao": "Engenharia de Software - UFSCar",
+      "resumo": "Arquiteto de Soluções experiente em projetar sistemas distribuídos, escaláveis e de alta performance na nuvem.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/joaopereirasilva" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Engenharia de Software", "instituicao": "UFSCar", "nivel": "Graduação", "ano_conclusao": 2015 }
+        ],
+        "experiencias": [
+          { "cargo": "Arquiteto de Soluções Cloud", "empresa": "Amazon Web Services", "inicio": "2018-06-01T00:00:00Z", "fim": null, "descricao": "Desenho de arquiteturas para clientes corporativos, definição de padrões técnicos e melhores práticas para desenvolvimento em nuvem AWS." },
+          { "cargo": "Desenvolvedor Sênior", "empresa": "TechX", "inicio": "2015-07-01T00:00:00Z", "fim": "2018-05-31T00:00:00Z", "descricao": "Desenvolvimento de aplicações Java com Spring Framework." }
+        ],
+        "habilidades": ["Arquitetura de Microsserviços", "AWS", "Azure", "System Design", "Java", "TOGAF"],
+        "idiomas": ["Português Nativo", "Inglês Fluente"]
+      }
+    }
+  },
+  {
+
+    "nome": "Lucas Ribeiro Pereira",
+    "email": "lucas.ribeiro.pereira@exemplo.com",
+    "senha_hash": "x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Recém-formado",
+      "formacao": "Ciência da Computação - Unesp Rio Claro",
+      "resumo": "Recém-formado em Ciência da Computação, buscando uma oportunidade para iniciar minha carreira em desenvolvimento de software.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/lucasrpereira" },
+        { "tipo": "GitHub", "valor": "github.com/lucasrp" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Ciência da Computação", "instituicao": "Unesp Rio Claro", "nivel": "Graduação", "ano_conclusao": 2025 }
+        ],
+        "experiencias": [],
+        "habilidades": ["Python", "Java", "C++", "SQL", "Git", "Estrutura de Dados"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Isabela Costa Ferreira",
+    "email": "isabela.costa.ferreira@exemplo.com",
+    "senha_hash": "c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "4 anos como Analista de Segurança da Informação",
+      "formacao": "Segurança da Informação - FIAP",
+      "resumo": "Analista de segurança focada em análise de vulnerabilidades, resposta a incidentes e conformidade.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/isabelacostaferreira" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Segurança da Informação", "instituicao": "FIAP", "nivel": "Graduação", "ano_conclusao": 2021 }
+        ],
+        "experiencias": [
+          { "cargo": "Analista de Segurança Pleno", "empresa": "PagSeguro", "inicio": "2021-03-01T00:00:00Z", "fim": null, "descricao": "Monitoramento de ameaças com SIEM, realização de pentests e implementação de políticas de segurança." }
+        ],
+        "habilidades": ["SIEM", "Pentesting", "ISO 27001", "Firewall", "Análise de Vulnerabilidades"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Bruno Lima Pereira",
+    "email": "bruno.lima.pereira@exemplo.com",
+    "senha_hash": "f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-06-16T16:16:00Z", "ip": "186.200.10.2", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "5 anos como Desenvolvedor Full Stack",
+      "formacao": "Engenharia de Software - PUC-SP",
+      "resumo": "Desenvolvedor Full Stack versátil, com experiência na criação de aplicações web completas, do backend ao frontend.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/brunolimadp" },
+        { "tipo": "GitHub", "valor": "github.com/brunolimadp" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Engenharia de Software", "instituicao": "PUC-SP", "nivel": "Graduação", "ano_conclusao": 2020 }
+        ],
+        "experiencias": [
+          { "cargo": "Desenvolvedor Full Stack", "empresa": "Embraer", "inicio": "2020-08-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de sistemas internos utilizando Java/Spring no backend e Angular/TypeScript no frontend." }
+        ],
+        "habilidades": ["Java", "Spring Boot", "Angular", "TypeScript", "PostgreSQL", "Docker"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Ana Souza da Silva",
+    "email": "ana.souza.da.silva@exemplo.com",
+    "senha_hash": "j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-04-14T14:44:00Z", "ip": "177.150.100.51", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "3 anos como Analista de BI",
+      "formacao": "Sistemas de Informação - UFSCar",
+      "resumo": "Analista de Business Intelligence com habilidade para transformar dados em insights acionáveis através de dashboards e relatórios.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/anasouzasilva" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Sistemas de Informação", "instituicao": "UFSCar", "nivel": "Graduação", "ano_conclusao": 2022 }
+        ],
+        "experiencias": [
+          { "cargo": "Analista de BI", "empresa": "Vale", "inicio": "2022-06-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de dashboards em Power BI e Tableau, criação de consultas SQL complexas e processos de ETL." }
+        ],
+        "habilidades": ["Power BI", "Tableau", "SQL", "ETL", "Data Warehousing", "Python"],
+        "idiomas": ["Português Nativo", "Inglês Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Santos",
+    "email": "vanessa.lima.santos@exemplo.com",
+    "senha_hash": "p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-08-18T18:18:18Z", "ip": "192.168.0.102", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "5 anos como Scrum Master",
+      "formacao": "Psicologia - USP",
+      "resumo": "Scrum Master certificada, dedicada a facilitar a adoção de práticas ágeis e a remover impedimentos para as equipes de desenvolvimento.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessalimasantos" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Psicologia", "instituicao": "USP", "nivel": "Graduação", "ano_conclusao": 2018 }
+        ],
+        "experiencias": [
+          { "cargo": "Scrum Master", "empresa": "Lopes S/A", "inicio": "2020-03-01T00:00:00Z", "fim": null, "descricao": "Condução das cerimônias do Scrum, coaching da equipe em práticas ágeis e colaboração com o Product Owner." }
+        ],
+        "habilidades": ["Scrum", "Kanban", "Agile Coaching", "Jira", "Resolução de Conflitos"],
+        "idiomas": ["Português Nativo", "Inglês Avançado"]
+      }
+    }
+  },
+  {
+
+    "nome": "Otávio Carvalho da Silva",
+    "email": "otávio.carvalho.da.silva@exemplo.com",
+    "senha_hash": "r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "6 anos como Administrador de Banco de Dados",
+      "formacao": "Banco de Dados - Fatec",
+      "resumo": "DBA especializado em otimização de performance, backup/recovery e administração de bancos de dados relacionais e NoSQL.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/otaviocarvalhodba" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Banco de Dados", "instituicao": "Fatec", "nivel": "Tecnólogo", "ano_conclusao": 2019 }
+        ],
+        "experiencias": [
+          { "cargo": "DBA Pleno", "empresa": "IBM Brasil", "inicio": "2019-11-01T00:00:00Z", "fim": null, "descricao": "Administração de bancos de dados Oracle, SQL Server e MongoDB, garantindo performance e disponibilidade." }
+        ],
+        "habilidades": ["Oracle", "SQL Server", "MongoDB", "Performance Tuning", "Backup & Recovery", "Linux"],
+        "idiomas": ["Português Nativo", "Inglês Técnico"]
+      }
+    }
+  },
+  {
+
+    "nome": "Felipe Alves da Silva",
+    "email": "felipe.alves.da.silva@exemplo.com",
+    "senha_hash": "u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "2 anos como Desenvolvedor Mobile",
+      "formacao": "Ciência da Computação - Mackenzie",
+      "resumo": "Desenvolvedor Mobile com experiência na criação de aplicativos nativos para Android e iOS.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/felipealvesdev" },
+        { "tipo": "GitHub", "valor": "github.com/felipealvesdev" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Ciência da Computação", "instituicao": "Mackenzie", "nivel": "Graduação", "ano_conclusao": 2023 }
+        ],
+        "experiencias": [
+          { "cargo": "Desenvolvedor Mobile Júnior", "empresa": "Whirlpool", "inicio": "2023-05-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de aplicativos em Kotlin e Swift, integração com APIs e publicação nas lojas." }
+        ],
+        "habilidades": ["Kotlin", "Swift", "Android SDK", "iOS SDK", "REST APIs", "Git"],
+        "idiomas": ["Português Nativo", "Inglês Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Mariana Gomes Melo",
+    "email": "mariana.gomes.melo@exemplo.com",
+    "senha_hash": "d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "4 anos como Product Owner",
+      "formacao": "Administração - FGV",
+      "resumo": "Product Owner ágil, focada em maximizar o valor do produto através da gestão de backlog e comunicação com stakeholders.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/marianagomesmelo" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Administração de Empresas", "instituicao": "FGV", "nivel": "Graduação", "ano_conclusao": 2020 }
+        ],
+        "experiencias": [
+          { "cargo": "Product Owner", "empresa": "Petrobras", "inicio": "2021-01-20T00:00:00Z", "fim": null, "descricao": "Definição da visão do produto, priorização do backlog, escrita de estórias de usuário e facilitação de cerimônias ágeis." }
+        ],
+        "habilidades": ["Scrum", "Agile", "Product Backlog Management", "Jira", "Roadmap", "Comunicação"],
+        "idiomas": ["Português Nativo", "Inglês Fluente"]
+      }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira da Silva",
+    "email": "henrique.ferreira.da.silva@exemplo.com",
+    "senha_hash": "g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "1 ano como Desenvolvedor de BI",
+      "formacao": "Engenharia da Computação - FEI",
+      "resumo": "Jovem profissional focado em Business Intelligence, com conhecimento em ferramentas de ETL e visualização de dados.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/hferreirasilva" },
+        { "tipo": "GitHub", "valor": "github.com/hferreirasilva" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Engenharia da Computação", "instituicao": "FEI", "nivel": "Graduação", "ano_conclusao": 2024 }
+        ],
+        "experiencias": [
+          { "cargo": "Desenvolvedor de BI Júnior", "empresa": "Ferreira", "inicio": "2024-03-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de processos de extração, transformação e carga (ETL) e criação de relatórios em Power BI." }
+        ],
+        "habilidades": ["SQL", "ETL", "Power BI", "Python", "Data Modeling"],
+        "idiomas": ["Português Nativo", "Inglês Intermediário"]
+      }
+    }
+  },
+  {
+
+    "nome": "Gabriela Santos Santos",
+    "email": "gabriela.santos.santos@exemplo.com",
+    "senha_hash": "t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "3 anos como Engenheira de Machine Learning",
+      "formacao": "Ciência da Computação - ITA",
+      "resumo": "Engenheira de ML com experiência em colocar modelos de machine learning em produção (MLOps).",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/gabrielasantosml" },
+        { "tipo": "GitHub", "valor": "github.com/gssantos" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Ciência da Computação", "instituicao": "ITA", "nivel": "Graduação", "ano_conclusao": 2022 }
+        ],
+        "experiencias": [
+          { "cargo": "Engenheira de Machine Learning", "empresa": "Gomes", "inicio": "2022-09-01T00:00:00Z", "fim": null, "descricao": "Desenvolvimento de pipelines de MLOps, deployment de modelos em produção e monitoramento de performance." }
+        ],
+        "habilidades": ["Python", "TensorFlow", "PyTorch", "MLOps", "Kubeflow", "Docker"],
+        "idiomas": ["Português Nativo", "Inglês Fluente"]
+      }
+    }
+  },
+  {
+
+    "nome": "Felipe Alves Melo",
+    "email": "felipe.alves.melo@exemplo.com",
+    "senha_hash": "y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Especialista em Redes",
+      "formacao": "Redes de Computadores - Senac",
+      "resumo": "Especialista em redes com certificação Cisco e ampla experiência em configuração de infraestrutura de rede corporativa.",
+      "contatos": [
+        { "tipo": "LinkedIn", "valor": "linkedin.com/in/felipealvesmelo" }
+      ],
+      "curriculo": {
+        "formacoes": [
+          { "curso": "Redes de Computadores", "instituicao": "Senac", "nivel": "Tecnólogo", "ano_conclusao": 2017 }
+        ],
+        "experiencias": [
+          { "cargo": "Especialista em Redes Sênior", "empresa": "Campos Costa - EI", "inicio": "2018-01-15T00:00:00Z", "fim": null, "descricao": "Gerenciamento de switches, roteadores e firewalls Cisco, configuração de VPNs e monitoramento de tráfego de rede." }
+        ],
+        "habilidades": ["Cisco IOS", "Routing (BGP, OSPF)", "Switching", "Firewall", "VPN", "Network Security"],
+        "idiomas": ["Português Nativo", "Inglês Técnico"]
+      }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Pereira",
+    "email": "eduarda.rocha.pereira@exemplo.com",
+    "senha_hash": "k7l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros Santos",
+    "email": "tiago.barros.santos@exemplo.com",
+    "senha_hash": "l8m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-03-03T03:30:00Z", "ip": "199.200.201.203", "sucesso": false },
+      { "data_hora": "2025-03-03T03:31:00Z", "ip": "199.200.201.203", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/tiago-barros-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Ferreira",
+    "email": "eduarda.rocha.ferreira@exemplo.com",
+    "senha_hash": "m9n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira da Silva",
+    "email": "sofia.teixeira.da.silva@outlook.com",
+    "senha_hash": "n0o1p2q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Karen Martins Ferreira",
+    "email": "karen.martins.ferreira@exemplo.com",
+    "senha_hash": "q3r4s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/karen-martins-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Carla Mendes da Silva",
+    "email": "carla.mendes.da.silva@exemplo.com",
+    "senha_hash": "s5t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/carla-mendes-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira Santos",
+    "email": "joão.pereira.santos@exemplo.com",
+    "senha_hash": "t6u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Ferreira",
+    "email": "henrique.ferreira.ferreira@exemplo.com",
+    "senha_hash": "u7v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira Melo",
+    "email": "sofia.teixeira.melo@exemplo.com",
+    "senha_hash": "v8w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-05-05T05:55:00Z", "ip": "170.1.1.2", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira da Silva",
+    "email": "sofia.teixeira.da.silva@gmail.com",
+    "senha_hash": "w9x0y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Pereira",
+    "email": "paula.moreira.pereira@gmail.com",
+    "senha_hash": "y1z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Natália Andrade Ferreira",
+    "email": "natália.andrade.ferreira@exemplo.com",
+    "senha_hash": "z2a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-10-13T13:13:13Z", "ip": "8.8.4.4", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/natália-andrade-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Pereira",
+    "email": "henrique.ferreira.pereira@exemplo.com",
+    "senha_hash": "a3b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Diego Oliveira Pereira",
+    "email": "diego.oliveira.pereira@exemplo.com",
+    "senha_hash": "b4c5d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/diego-oliveira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Ferreira",
+    "email": "henrique.ferreira.ferreira@outlook.com",
+    "senha_hash": "d6e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira Pereira",
+    "email": "sofia.teixeira.pereira@exemplo.com",
+    "senha_hash": "e7f8g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Melo",
+    "email": "henrique.ferreira.melo@exemplo.com",
+    "senha_hash": "g9h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros Melo",
+    "email": "tiago.barros.melo@exemplo.com",
+    "senha_hash": "h0i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/tiago-barros-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Diego Oliveira Melo",
+    "email": "diego.oliveira.melo@exemplo.com",
+    "senha_hash": "i1j2k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/diego-oliveira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Natália Andrade da Silva",
+    "email": "natália.andrade.da.silva@exemplo.com",
+    "senha_hash": "k3l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/natália-andrade-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Pereira",
+    "email": "eduarda.rocha.pereira@gmail.com",
+    "senha_hash": "l4m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira da Silva",
+    "email": "paula.moreira.da.silva@exemplo.com",
+    "senha_hash": "m5n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira Melo",
+    "email": "joão.pereira.melo@exemplo.com",
+    "senha_hash": "n6o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Melo",
+    "email": "henrique.ferreira.melo@outlook.com",
+    "senha_hash": "o7p8q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Karen Martins Melo",
+    "email": "karen.martins.melo@exemplo.com",
+    "senha_hash": "q9r0s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/karen-martins-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Lucas Ribeiro Pereira",
+    "email": "lucas.ribeiro.pereira@yahoo.com",
+    "senha_hash": "s1t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/lucas-ribeiro-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Carla Mendes Melo",
+    "email": "carla.mendes.melo@exemplo.com",
+    "senha_hash": "t2u3v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/carla-mendes-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Felipe Alves da Silva",
+    "email": "felipe.alves.da.silva@globo.com",
+    "senha_hash": "h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/felipe-alves-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes Melo",
+    "email": "ricardo.nunes.melo@yahoo.com",
+    "senha_hash": "v4w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-02-02T22:22:22Z", "ip": "208.67.222.220", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardo-nunes-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Karen Martins da Silva",
+    "email": "karen.martins.da.silva@exemplo.com",
+    "senha_hash": "w5x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/karen-martins-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ana Souza Melo",
+    "email": "ana.souza.melo@exemplo.com",
+    "senha_hash": "x6y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ana-souza-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes da Silva",
+    "email": "ricardo.nunes.da.silva@exemplo.com",
+    "senha_hash": "y7z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardo-nunes-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Santos",
+    "email": "paula.moreira.santos@exemplo.com",
+    "senha_hash": "z8a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Lucas Ribeiro da Silva",
+    "email": "lucas.ribeiro.da.silva@exemplo.com",
+    "senha_hash": "a9b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8",
+    "perfil": "CANDIDATO",
+    "logins": [
+      { "data_hora": "2025-10-14T14:14:14Z", "ip": "200.100.50.4", "sucesso": true }
+    ],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/lucas-ribeiro-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Santos",
+    "email": "henrique.ferreira.santos@gmail.com",
+    "senha_hash": "b0c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros Pereira",
+    "email": "tiago.barros.pereira@exemplo.com",
+    "senha_hash": "c1d2e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/tiago-barros-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Pereira",
+    "email": "vanessa.lima.pereira@exemplo.com",
+    "senha_hash": "e3f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ana Souza Santos",
+    "email": "ana.souza.santos@exemplo.com",
+    "senha_hash": "f4g5h6i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ana-souza-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira Ferreira",
+    "email": "joão.pereira.ferreira@exemplo.com",
+    "senha_hash": "i7j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Melo",
+    "email": "paula.moreira.melo@exemplo.com",
+    "senha_hash": "j8k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros Pereira",
+    "email": "tiago.barros.pereira@outlook.com",
+    "senha_hash": "k9l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/tiago-barros-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Mariana Gomes Pereira",
+    "email": "mariana.gomes.pereira@exemplo.com",
+    "senha_hash": "l0m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/mariana-gomes-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Melo",
+    "email": "paula.moreira.melo@hotmail.com",
+    "senha_hash": "m1n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Tiago Barros da Silva",
+    "email": "tiago.barros.da.silva@exemplo.com",
+    "senha_hash": "n2o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/tiago-barros-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Santos",
+    "email": "vanessa.lima.santos@outlook.com",
+    "senha_hash": "o3p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Ferreira",
+    "email": "henrique.ferreira.ferreira@gmail.com",
+    "senha_hash": "p4q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes Pereira",
+    "email": "ricardo.nunes.pereira@exemplo.com",
+    "senha_hash": "q5r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardo-nunes-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Carla Mendes Ferreira",
+    "email": "carla.mendes.ferreira@exemplo.com",
+    "senha_hash": "r6s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/carla-mendes-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira Ferreira",
+    "email": "joão.pereira.ferreira@hotmail.com",
+    "senha_hash": "s7t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira da Silva",
+    "email": "joão.pereira.da.silva@globo.com",
+    "senha_hash": "t8u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Mariana Gomes da Silva",
+    "email": "mariana.gomes.da.silva@exemplo.com",
+    "senha_hash": "u9v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/mariana-gomes-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha da Silva",
+    "email": "eduarda.rocha.da.silva@exemplo.com",
+    "senha_hash": "v0w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes Ferreira",
+    "email": "ricardo.nunes.ferreira@exemplo.com",
+    "senha_hash": "w1x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardo-nunes-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira Pereira",
+    "email": "sofia.teixeira.pereira@gmail.com",
+    "senha_hash": "x2y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Pereira",
+    "email": "paula.moreira.pereira@yahoo.com",
+    "senha_hash": "y3z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Lucas Ribeiro Santos",
+    "email": "lucas.ribeiro.santos@exemplo.com",
+    "senha_hash": "z4a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/lucas-ribeiro-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Carla Mendes da Silva",
+    "email": "carla.mendes.da.silva@gmail.com",
+    "senha_hash": "a5b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/carla-mendes-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ana Souza Santos",
+    "email": "ana.souza.santos@gmail.com",
+    "senha_hash": "b6c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ana-souza-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ana Souza Pereira",
+    "email": "ana.souza.pereira@exemplo.com",
+    "senha_hash": "c7d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ana-souza-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Isabela Costa Ferreira",
+    "email": "isabela.costa.ferreira@globo.com",
+    "senha_hash": "d8e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/isabela-costa-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Natália Andrade da Silva",
+    "email": "natália.andrade.da.silva@yahoo.com",
+    "senha_hash": "e9f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/natália-andrade-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Otávio Carvalho Melo",
+    "email": "otávio.carvalho.melo@exemplo.com",
+    "senha_hash": "f0g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/otávio-carvalho-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Melo",
+    "email": "vanessa.lima.melo@gmail.com",
+    "senha_hash": "g1h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Melo",
+    "email": "vanessa.lima.melo@exemplo.com",
+    "senha_hash": "h2i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Karen Martins Santos",
+    "email": "karen.martins.santos@exemplo.com",
+    "senha_hash": "i3j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/karen-martins-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira da Silva",
+    "email": "paula.moreira.da.silva@globo.com",
+    "senha_hash": "j4k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Santos",
+    "email": "henrique.ferreira.santos@hotmail.com",
+    "senha_hash": "k5l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Isabela Costa Pereira",
+    "email": "isabela.costa.pereira@exemplo.com",
+    "senha_hash": "l6m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/isabela-costa-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Santos",
+    "email": "eduarda.rocha.santos@exemplo.com",
+    "senha_hash": "m7n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Santos",
+    "email": "henrique.ferreira.santos@yahoo.com",
+    "senha_hash": "n8o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Melo",
+    "email": "vanessa.lima.melo@hotmail.com",
+    "senha_hash": "o9p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Sofia Teixeira Santos",
+    "email": "sofia.teixeira.santos@exemplo.com",
+    "senha_hash": "p0q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/sofia-teixeira-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Paula Moreira Pereira",
+    "email": "paula.moreira.pereira@outlook.com",
+    "senha_hash": "q1r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/paula-moreira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Henrique Ferreira Pereira",
+    "email": "henrique.ferreira.pereira@hotmail.com",
+    "senha_hash": "r2s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/henrique-ferreira-pereira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Otávio Carvalho Ferreira",
+    "email": "otávio.carvalho.ferreira@exemplo.com",
+    "senha_hash": "s3t4u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/otávio-carvalho-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "João Pereira Ferreira",
+    "email": "joão.pereira.ferreira@outlook.com",
+    "senha_hash": "u5v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/joão-pereira-ferreira" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ricardo Nunes Melo",
+    "email": "ricardo.nunes.melo@globo.com",
+    "senha_hash": "v6w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ricardo-nunes-melo" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Ana Souza da Silva",
+    "email": "ana.souza.da.silva@gmail.com",
+    "senha_hash": "w7x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/ana-souza-da-silva" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Eduarda Rocha Santos",
+    "email": "eduarda.rocha.santos@hotmail.com",
+    "senha_hash": "x8y9z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/eduarda-rocha-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  },
+  {
+
+    "nome": "Vanessa Lima Santos",
+    "email": "vanessa.lima.santos@ig.com",
+    "senha_hash": "z0a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9",
+    "perfil": "CANDIDATO",
+    "logins": [],
+    "candidato": {
+      "experiencia": "Não informado",
+      "formacao": "Não informado",
+      "resumo": "Profissional buscando novas oportunidades.",
+      "contatos": [{ "tipo": "LinkedIn", "valor": "linkedin.com/in/vanessa-lima-santos" }],
+      "curriculo": { "formacoes": [], "experiencias": [], "habilidades": [], "idiomas": ["Português Nativo"] }
+    }
+  }
+]
