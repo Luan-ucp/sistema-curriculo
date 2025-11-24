@@ -51,3 +51,52 @@ def buscar_candidatos_por_ids(lista_ids):
         {"senha_hash": 0, "logins": 0} # Projeção: Esconde senha e logs por segurança
     ))
     return usuarios
+
+# src/controllers/user_controller.py
+from src.database import get_database
+from src.utils.security import gerar_hash # Certifique-se que essa função existe no utils
+
+def salvar_usuario(nome, email, senha, perfil, razao_social=None):
+    db = get_database()
+    collection = db["usuario"] # Usando singular conforme seu padrão
+    
+    # 1. Verifica se o e-mail já existe
+    if collection.find_one({"email": email}):
+        return False, "E-mail já cadastrado no sistema."
+    
+    # 2. Cria a estrutura base
+    novo_usuario = {
+        "nome": nome,
+        "email": email,
+        "senha_hash": gerar_hash(senha), # IMPORTANTE: Criptografar!
+        "perfil": perfil,
+        "logins": []
+    }
+    
+    # 3. Adiciona campos específicos baseados no perfil
+    if perfil == "EMPREGADOR":
+        if not razao_social:
+            return False, "Razão Social é obrigatória para empresas."
+        
+        novo_usuario["empregador"] = {
+            "razao_social": razao_social
+        }
+        
+    elif perfil == "CANDIDATO":
+        # Inicializa a estrutura vazia para evitar erros no Portal do Candidato
+        novo_usuario["candidato"] = {
+            "experiencia": "Não informado",
+            "formacao": "Não informado",
+            "resumo": "",
+            "contatos": [],
+            "curriculo": {
+                "formacoes": [],
+                "experiencias": [],
+                "habilidades": [],
+                "idiomas": []
+            }
+        }
+        
+    # 4. Salva no banco
+    collection.insert_one(novo_usuario)
+    return True, "Cadastro realizado com sucesso! Faça login agora."

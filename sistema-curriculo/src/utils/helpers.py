@@ -1,1 +1,0 @@
-# para formatar cpf, datas e outros formatos comuns.

@@ -5,6 +5,8 @@ import time
 # Imports dos controllers
 from src.controllers.candidato_controller import buscar_perfil_candidato, atualizar_curriculo, excluir_curriculo_completo
 from src.controllers.vaga_controller import listar_todas_vagas, candidatar_vaga
+from src.controllers.habilidade_controller import buscar_habilidades
+from src.utils.formatter import formatar_real
 
 # --- 1. SEGURANÇA E SETUP ---
 if "logado" not in st.session_state or not st.session_state["logado"]:
@@ -37,10 +39,7 @@ with tab_curriculo:
     st.header("Editar Dados Profissionais")
     
     # Lista fixa de opções
-    lista_habilidades_sistema = [
-        "Python", "Java", "Streamlit", "MongoDB", "SQL", 
-        "AWS", "Agile", "Scrum", "Inglês Fluente", "GCP", "BigQuery"
-    ]
+    lista_habilidades_sistema = buscar_habilidades()
 
     with st.form("form_curriculo"):
         resumo = st.text_area("Resumo Profissional", value=candidato_info.get("resumo", ""))
@@ -159,8 +158,8 @@ with tab_vagas:
             with col_info:
                 st.subheader(vaga['titulo'])
                 st.caption(f"{vaga['empregador']['razao_social']} | {vaga['localizacao']['cidade']}-{vaga['localizacao']['estado']}")
-                st.write(vaga['descricao'][:150] + "...")
-                st.write(f"**Salário:** R$ {vaga['salario']}")
+                st.write(vaga['descricao'])
+                st.markdown(f"**Salário:** {formatar_real(vaga['salario'])}")
                 
                 inscritos_str = [str(uid) for uid in vaga.get("candidatos_inscritos", [])]
                 usuario_id_str = str(dados_usuario["_id"])

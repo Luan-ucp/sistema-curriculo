@@ -2,7 +2,6 @@ import streamlit as st
 from pymongo import MongoClient
 import certifi # Opcional: Ajuda se der erro de SSL/Certificado
 
-
 @st.cache_resource
 def get_database():
     

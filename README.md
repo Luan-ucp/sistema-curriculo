@@ -34,6 +34,12 @@ Default Schema: banco_de_vaga
 5. Em caso de sucesso, salvar a conexão e acessar o banco de dados.  
 
 ---
+
+### Procedimentos para Conexão no Atlas com MongoDB Compass
+
+1. Clique em Add New Connection
+2. No campo URI, cole a URI do quadro abaixo. A URI contém o usuário e senha para conexão.
+
 ## Estrutura de Pasta
 
 Dentro da pasta *./SQL* há subpastas nomeadas de acordo com a atividade a ser entregue, exemplo: *./SQL/atividade_3*.
