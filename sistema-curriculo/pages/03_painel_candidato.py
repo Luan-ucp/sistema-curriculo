@@ -8,6 +8,13 @@ from src.controllers.vaga_controller import listar_todas_vagas, candidatar_vaga
 from src.controllers.habilidade_controller import buscar_habilidades
 from src.utils.formatter import formatar_real
 
+with st.sidebar:
+    st.write(f"Logado como: **{st.session_state.get('usuario_nome', 'Usuário')}**")
+    
+    if st.button("🚪 Sair do Sistema"):
+        st.session_state.clear() # Limpa a sessão
+        st.switch_page("app.py") # Volta para a tela de login
+
 # --- 1. SEGURANÇA E SETUP ---
 if "logado" not in st.session_state or not st.session_state["logado"]:
     st.warning("Faça login.")
@@ -28,12 +35,11 @@ candidato_info = dados_usuario.get("candidato", {
 
 st.title(f"Portal do Candidato: {st.session_state['usuario_nome']}")
 
-# --- 2. CRIAÇÃO DAS ABAS ---
-# Inverti a ordem: Currículo primeiro, Vagas depois.
+# --- 2. ABAS ---
 tab_curriculo, tab_vagas = st.tabs(["📄 Meu Currículo", "🔍 Buscar Vagas"])
 
 # ==========================================
-# ABA 1: MEU CURRÍCULO (AGORA É A PRIMEIRA)
+# ABA 1: MEU CURRÍCULO
 # ==========================================
 with tab_curriculo:
     st.header("Editar Dados Profissionais")
@@ -79,9 +85,9 @@ with tab_curriculo:
             time.sleep(1)
             st.rerun()
 
-    # --- ZONA DE PERIGO (Fora do Form) ---
+    # --- Excluir Currículo  ---
     st.divider()
-    st.subheader("Zona de Perigo")
+    st.subheader("Excluir Currículo")
 
     if "confirmar_delete" not in st.session_state:
         st.session_state["confirmar_delete"] = False
@@ -158,6 +164,7 @@ with tab_vagas:
             with col_info:
                 st.subheader(vaga['titulo'])
                 st.caption(f"{vaga['empregador']['razao_social']} | {vaga['localizacao']['cidade']}-{vaga['localizacao']['estado']}")
+                st.caption(f"Tipo de Contrato - {vaga['tipo_contrato']}")
                 st.write(vaga['descricao'])
                 st.markdown(f"**Salário:** {formatar_real(vaga['salario'])}")
                 

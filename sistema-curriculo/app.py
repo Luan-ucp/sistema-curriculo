@@ -1,6 +1,6 @@
 import streamlit as st
 from src.controllers.auth_controller import verificar_login
-from src.controllers.user_controller import salvar_usuario # Importa a função nova
+from src.controllers.user_controller import salvar_usuario
 
 st.set_page_config(page_title="Sistema de Currículos", page_icon="💼")
 
@@ -14,6 +14,10 @@ if "perfil" not in st.session_state:
 if "razao_social" not in st.session_state:
     st.session_state["razao_social"] = None
 
+def switch_page(page_path):
+    # Função nativa do Streamlit para forçar a mudança
+    st.switch_page(page_path)
+    
 # --- FUNÇÃO DE LOGIN E CADASTRO ---
 def tela_entrada():
     st.title("💼 Sistema de Vagas & Currículos")
@@ -38,10 +42,12 @@ def tela_entrada():
                     st.session_state["usuario_nome"] = user_data["nome"]
                     st.session_state["email"] = user_data["email"]
                     st.session_state["perfil"] = user_data["perfil"]
-                    
                     if "empregador" in user_data:
                         st.session_state["razao_social"] = user_data["empregador"]["razao_social"]
-                    
+                    if st.session_state["perfil"] == "EMPREGADOR":
+                        st.switch_page("pages/02_painel_empresa.py")                        
+                    elif st.session_state["perfil"] == "CANDIDATO":
+                        st.switch_page("pages/03_painel_candidato.py")
                     st.rerun()
                 else:
                     st.error("E-mail ou senha incorretos.")
@@ -101,8 +107,13 @@ def tela_principal():
         st.title("Painel do Candidato")
         st.info("👈 Utilize o menu lateral para **Editar Currículo** ou **Buscar Vagas**.")
 
+
 # --- CONTROLE DE FLUXO ---
-if not st.session_state["logado"]:
-    tela_entrada()
+# Se já estiver logado (ex: deu F5), redireciona de novo para não cair no limbo
+if st.session_state["logado"]:
+    if st.session_state["perfil"] == "EMPREGADOR":
+        st.switch_page("pages/02_painel_empresa.py")
+    elif st.session_state["perfil"] == "CANDIDATO":
+        st.switch_page("pages/03_painel_candidato.py")
 else:
-    tela_principal()
+    tela_entrada()

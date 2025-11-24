@@ -100,3 +100,31 @@ def salvar_usuario(nome, email, senha, perfil, razao_social=None):
     # 4. Salva no banco
     collection.insert_one(novo_usuario)
     return True, "Cadastro realizado com sucesso! Faça login agora."
+
+# src/controllers/user_controller.py
+from src.database import get_database
+from bson.objectid import ObjectId
+
+def buscar_candidatos_por_ids(lista_ids):
+    """
+    Recebe uma lista de IDs e retorna os dados completos dos candidatos.
+    """
+    db = get_database()
+    
+    # 1. Converte strings para ObjectId
+    lista_obj_ids = []
+    for item in lista_ids:
+        if isinstance(item, str):
+            lista_obj_ids.append(ObjectId(item))
+        else:
+            lista_obj_ids.append(item)
+            
+    usuarios = list(db["usuario"].find(
+        {"_id": {"$in": lista_obj_ids}},
+        {
+            "nome": 1, 
+            "email": 1, 
+            "candidato": 1
+        }
+    ))
+    return usuarios

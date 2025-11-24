@@ -10,6 +10,13 @@ from src.controllers.vaga_controller import (
 from src.controllers.user_controller import buscar_candidatos_por_ids
 from src.utils.formatter import formatar_real
 
+with st.sidebar:
+    st.write(f"Logado como: **{st.session_state.get('usuario_nome', 'Usuário')}**")
+    
+    if st.button("🚪 Sair do Sistema"):
+        st.session_state.clear() # Limpa a sessão
+        st.switch_page("app.py") # Volta para a tela de login
+
 # --- BLOQUEIO DE SEGURANÇA ---
 if "logado" not in st.session_state or st.session_state["perfil"] != "EMPREGADOR":
     st.warning("Acesso restrito a Empresas.")
@@ -97,26 +104,92 @@ with aba2:
         
         with st.expander(titulo_expander):
             # --- ÁREA DE CANDIDATOS ---
+# ... (dentro do with st.expander(titulo_expander): da vaga) ...
+
+            st.divider()
             st.write("#### 👥 Candidatos Inscritos")
+            
             lista_ids = vaga.get("candidatos_inscritos", [])
             
             if not lista_ids:
-                st.write("_Nenhum candidato inscrito ainda._")
+                st.info("Nenhum candidato se inscreveu nesta vaga ainda.")
             else:
-                # Busca os dados reais dos usuários
+                # Busca os dados completos (incluindo currículo)
                 candidatos = buscar_candidatos_por_ids(lista_ids)
                 
-                # Mostra numa tabelinha simples
-                dados_tabela = []
-                for c in candidatos:
-                    dados_tabela.append({
-                        "Nome": c["nome"],
-                        "Email": c["email"],
-                        # "Link Currículo": "Ver PDF" (Ideia futura)
-                    })
-                st.dataframe(dados_tabela, use_container_width=True)
+                # Prepara os sets da VAGA para calcular o Match
+                skills_vaga = set(vaga.get("habilidades", []))
 
-            st.divider()
+                for cand in candidatos:
+                    # Pega os dados do objeto 'candidato' (pode estar vazio se ele nunca editou)
+                    info_cand = cand.get("candidato", {})
+                    curr_cand = info_cand.get("curriculo", {})
+                    
+                    # --- CÁLCULO DO MATCH ---
+                    skills_cand = set(curr_cand.get("habilidades", []))
+                    match_items = skills_vaga.intersection(skills_cand)
+                    match_percent = 0
+                    if skills_vaga:
+                        match_percent = int((len(match_items) / len(skills_vaga)) * 100)
+                    
+                    # Define cor/icone do match
+                    icon_match = "🔴"
+                    if match_percent >= 50: icon_match = "🟡" 
+                    if match_percent >= 80: icon_match = "🟢"
+
+                    # --- VISUAL DO CANDIDATO ---
+                    # Cria um expander para cada pessoa
+                    with st.expander(f"{icon_match} {match_percent}% Match | {cand['nome']}"):
+                        
+                        col_a, col_b = st.columns([1, 1])
+                        
+                        with col_a:
+                            st.markdown(f"**📧 Email:** {cand['email']}")
+                            
+                            # Mostra quais habilidades bateram
+                            if match_items:
+                                st.success(f"**Match:** {', '.join(match_items)}")
+                            
+                            # Mostra as que faltam (opcional, mas útil para o RH)
+                            missing = skills_vaga - skills_cand
+                            if missing:
+                                st.error(f"**Faltam:** {', '.join(missing)}")
+                        
+                        with col_b:
+                            idiomas = curr_cand.get("idiomas", [])
+                            st.markdown(f"**🗣️ Idiomas:** {', '.join(idiomas) if idiomas else 'Não informado'}")
+                            
+                            # Links de contato (Linkedin, etc)
+                            contatos = info_cand.get("contatos", [])
+                            if contatos:
+                                st.markdown("**🔗 Contatos:**")
+                                for c in contatos:
+                                    st.write(f"- {c.get('tipo')}: {c.get('valor')}")
+
+                        st.markdown("---")
+                        st.markdown("**📝 Resumo Profissional:**")
+                        st.write(info_cand.get("resumo", "Sem resumo cadastrado."))
+                        
+                        st.markdown("**🎓 Formação / Experiência:**")
+                        st.write(info_cand.get("experiencia", "Não informado."))
+            
+            # if not lista_ids:
+            #     st.write("_Nenhum candidato inscrito ainda._")
+            # else:
+            #     # Busca os dados reais dos usuários
+            #     candidatos = buscar_candidatos_por_ids(lista_ids)
+                
+            #     # Mostra numa tabelinha simples
+            #     dados_tabela = []
+            #     for c in candidatos:
+            #         dados_tabela.append({
+            #             "Nome": c["nome"],
+            #             "Email": c["email"],
+            #             # "Link Currículo": "Ver PDF" (Ideia futura)
+            #         })
+            #     st.dataframe(dados_tabela, use_container_width=True)
+
+            # st.divider()
             
 # --- ÁREA DE EDIÇÃO ---
             st.write("#### ✏️ Editar Vaga")
@@ -174,3 +247,42 @@ with aba2:
                     atualizar_vaga(vaga['_id'], update_data)
                     st.success("Atualizado!")
                     st.rerun()
+
+            
+        # --- FORA DO FORMULÁRIO ---
+        st.divider() # Cria uma linha divisória visual
+        
+        # Colunas para organizar o botão à esquerda
+        col_trash, col_aviso = st.columns([1, 3])
+        
+        # Criamos uma chave única para o estado de confirmação dessa vaga específica
+        chave_confirmar = f"confirmar_exclusao_{vaga['_id']}"
+        
+        if chave_confirmar not in st.session_state:
+            st.session_state[chave_confirmar] = False
+
+        # Botão inicial de Excluir
+        if col_trash.button("🗑️ Excluir", key=f"btn_trash_{vaga['_id']}", type="primary"):
+            st.session_state[chave_confirmar] = True # Ativa o alerta
+
+        # Se ativou o alerta, mostra a confirmação
+        if st.session_state[chave_confirmar]:
+            st.warning("⚠️ Tem certeza? Essa ação excluirá a vaga e removerá todos os candidatos associados.")
+            
+            col_sim, col_nao = st.columns(2)
+            
+            if col_sim.button("✅ Sim, excluir", key=f"sim_{vaga['_id']}"):
+                # Chama a função do controller que já existe
+                excluir_vaga(vaga['_id'])
+                
+                st.toast("Vaga excluída com sucesso!", icon="🗑️")
+                
+                # Limpa o estado e recarrega a página
+                del st.session_state[chave_confirmar]
+                import time
+                time.sleep(1)
+                st.rerun()
+            
+            if col_nao.button("❌ Cancelar", key=f"nao_{vaga['_id']}"):
+                st.session_state[chave_confirmar] = False
+                st.rerun()
