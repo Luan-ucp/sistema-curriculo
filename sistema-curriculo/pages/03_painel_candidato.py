@@ -7,13 +7,16 @@ from src.controllers.candidato_controller import buscar_perfil_candidato, atuali
 from src.controllers.vaga_controller import listar_todas_vagas, candidatar_vaga
 from src.controllers.habilidade_controller import buscar_habilidades
 from src.utils.formatter import formatar_real
+from src.utils.ui import configurar_pagina, rodape_personalizado
+
+configurar_pagina("Portal do Candidato", "🚀")
 
 with st.sidebar:
     st.write(f"Logado como: **{st.session_state.get('usuario_nome', 'Usuário')}**")
-    
-    if st.button("🚪 Sair do Sistema"):
-        st.session_state.clear() # Limpa a sessão
-        st.switch_page("app.py") # Volta para a tela de login
+    # Dica moderna: Botão 'primary' ou full width na sidebar
+    if st.button("🚪 Sair", type="primary", use_container_width=True):
+        st.session_state.clear() 
+        st.switch_page("app.py")
 
 # --- 1. SEGURANÇA E SETUP ---
 if "logado" not in st.session_state or not st.session_state["logado"]:
@@ -197,3 +200,5 @@ with tab_vagas:
                 
                 if match_items:
                     st.caption(f"Match: {', '.join(match_items)}")
+
+rodape_personalizado()

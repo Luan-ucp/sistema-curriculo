@@ -9,18 +9,28 @@ from src.controllers.vaga_controller import (
 )
 from src.controllers.user_controller import buscar_candidatos_por_ids
 from src.utils.formatter import formatar_real
+from src.utils.ui import configurar_pagina, rodape_personalizado
+
+configurar_pagina("Painel da Empresa", "🏢")
 
 with st.sidebar:
-    st.write(f"Logado como: **{st.session_state.get('usuario_nome', 'Usuário')}**")
+    st.image("https://cdn-icons-png.flaticon.com/512/2922/2922510.png", width=50) # Opcional: Logo
+    st.write(f"Olá, **{st.session_state.get('usuario_nome', 'Visitante')}**")
+    st.caption(f"Empresa: {st.session_state.get('razao_social', '')}")
+    st.divider()
     
-    if st.button("🚪 Sair do Sistema"):
-        st.session_state.clear() # Limpa a sessão
-        st.switch_page("app.py") # Volta para a tela de login
+    if st.button("🚪 Sair do Sistema", use_container_width=True): # Botão full width fica mais bonito
+        st.session_state.clear()
+        st.switch_page("app.py")
 
-# --- BLOQUEIO DE SEGURANÇA ---
+# --- BLOQUEIO DE SEGURANÇA (Mantenha seu código original) ---
 if "logado" not in st.session_state or st.session_state["perfil"] != "EMPREGADOR":
     st.warning("Acesso restrito a Empresas.")
     st.stop()
+
+st.title(f"Painel Corporativo")
+st.markdown("Gerencie suas vagas e visualize candidatos qualificados.")
+st.divider()
 
 st.title(f"Painel: {st.session_state['razao_social']}")
 
@@ -286,3 +296,5 @@ with aba2:
             if col_nao.button("❌ Cancelar", key=f"nao_{vaga['_id']}"):
                 st.session_state[chave_confirmar] = False
                 st.rerun()
+
+rodape_personalizado()
