@@ -1,58 +1,42 @@
-# Laboratório de Banco de Dados  
-## Sistema de Currículos (Banco de Vagas)  
+# 📂 Entrega Final: Projeto JobMatch System
 
-Este projeto foi proposto pelo professor **Bruno Elias Penteado** com o objetivo de compreender e aplicar conceitos de **banco de dados relacionais**.  
+Este repositório contém os artefatos do projeto de desenvolvimento do sistema de currículos e vagas **JobMatch**. O trabalho está organizado em três diretórios principais, separando a modelagem de dados (SQL e NoSQL) da aplicação.
 
-Além do banco de dados, será desenvolvido um sistema web utilizando a biblioteca [Streamlit](https://streamlit.io/) em **Python**.  
-O banco de dados será hospedado na nuvem através do serviço [Aiven](https://console.aiven.io/), utilizando o **MySQL** como Sistema Gerenciador de Banco de Dados (SGBD).  
-
----
-
-## Conexão ao Banco de Dados  
-
-### Pré-requisitos  
-- Instalação do [MySQL Workbench](https://dev.mysql.com/downloads/workbench/);  
-- Credenciais de acesso ao banco de dados (fornecidas pelo serviço Aiven).  
-
----
-
-### Procedimentos para Conexão no MySQL Workbench  
-
-1. Abrir o **MySQL Workbench**;  
-2. No painel **MySQL Connections**, clicar em **+** para criar uma nova conexão;  
-3. Preencher os campos da janela **Setup New Connection** com os dados fornecidos:  
+## 🗂️ Estrutura de Pastas
 
 ```text
-Hostname: sistema-curriculo-unesp-6605.d.aivencloud.com
-Port: 11135
-Username: avnadmin
-Password: AVNS_e0dQRRILXP-5ImfpVRY
-Default Schema: banco_de_vaga
-```  
+Projeto/
+├── 📁 SQL/                  # Scripts e Modelagem Relacional (MySQL)
+├── 📁 MongoDB/              # Scripts e Exports do Banco NoSQL
+└── 📁 sistema-curriculo/    # Código Fonte da Aplicação (Python + Streamlit)
+```
+# 📍 Detalhes do Conteúdo
 
-4. Clicar em **Test Connection** para verificar se as credenciais estão corretas;  
-5. Em caso de sucesso, salvar a conexão e acessar o banco de dados.  
+## 1. 🛢️ Pasta ```SQL/```
 
----
+Nesta pasta encontram-se os arquivos referentes ao Banco de Dados Relacional (MySQL).
 
-### Procedimentos para Conexão no Atlas com MongoDB Compass
+* Scripts de criação de tabelas (DDL).
 
-1. Clique em Add New Connection
-2. No campo URI, cole a URI do quadro abaixo. A URI contém o usuário e senha para conexão.
+* Scripts de inserção de dados (DML).
 
-## Estrutura de Pasta
+* Diagramas entidade-relacionamento (DER).
 
-Dentro da pasta *./SQL* há subpastas nomeadas de acordo com a atividade a ser entregue, exemplo: *./SQL/atividade_3*.
+## 2. 🍃 Pasta ```MongoDB/```
 
-Também foi criada uma pasta de *./SQL/migrations* para armazenar os scripts de alterações na estrutura do banco de dados. O nome do arquivo *.sql* do migration deve ser respectivo a atividade, por exemplo: *atividade_3.sql*.
+Nesta pasta encontram-se os arquivos referentes ao Banco de Dados NoSQL.
 
+* Estrutura das collections (```usuario```, ```vaga```, ```habilidade```).
 
-## Tecnologias Utilizadas  
+* Scripts ou arquivos ```.json``` de exportação dos dados.
 
-- **MySQL** – Sistema Gerenciador de Banco de Dados Relacional (SGBDR);  
-- **Aiven** – Serviço de hospedagem em nuvem para o banco de dados;  
-- **Python** – Linguagem de programação utilizada para integração;  
-- **Streamlit** – Biblioteca Python para construção de interfaces web.  
+## 3. 🐍 Pasta ```sistema-curriculo/```
 
----
+Nesta pasta está o código fonte completo da aplicação desenvolvida em Python com Streamlit.
 
+**Nota:** Dentro desta pasta existe um arquivo README.md técnico específico, com instruções detalhadas de instalação (requirements.txt), configuração de ambiente e execução do software.
+
+# 👤 Alunos
+Luan Araújo
+
+Moisés Dearo
