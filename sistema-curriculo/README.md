@@ -102,6 +102,10 @@ streamlit run app.py
 
 * **Isolamento:** Usuários do tipo "Candidato" não conseguem acessar rotas de "Empresa" e vice-versa.
 
+# 💻 Link de Acesso à aplicação web
+
+https://job-m4tch.streamlit.app/
+
 # 👤 Autores
 
 Desenvolvido por Luan Araújo & Moisés Dearo.
