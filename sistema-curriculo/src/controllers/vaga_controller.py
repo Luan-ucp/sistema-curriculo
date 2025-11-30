@@ -60,3 +60,36 @@ def candidatar_vaga(id_vaga, id_candidato):
         {"$push": {"candidatos_inscritos": ObjectId(id_candidato)}}
     )
     return True, "Candidatura realizada com sucesso!"
+
+def buscar_dados_mapa(razao_social=None):
+    """
+    Retorna latitude e longitude para o st.map.
+    Se passar razao_social, filtra apenas daquela empresa.
+    """
+    db = get_database()
+    
+    query = {}
+    
+    # 1. Filtro de Empresa (se for passado)
+    if razao_social:
+        query["empregador.razao_social"] = razao_social
+    
+    # 2. Garante que só pegamos vagas que têm coordenadas
+    query["cidade.latitude"] = {"$exists": True, "$ne": None}
+    query["cidade.longitude"] = {"$exists": True, "$ne": None}
+
+    # 3. Traz apenas o necessário (mais leve)
+    projecao = {
+        "titulo": 1,
+        "empregador.razao_social": 1,
+        "cidade.latitude": 1, 
+        "cidade.longitude": 1,
+        "_id": 1
+    }
+    
+    vagas = list(db["vaga"].find(query, projecao))
+    
+    for v in vagas:
+        v["_id"] = str(v["_id"])
+        
+    return vagas

@@ -5,9 +5,13 @@ from src.controllers.vaga_controller import (
     criar_vaga, 
     buscar_vagas_por_empresa, 
     atualizar_vaga, 
-    excluir_vaga
+    excluir_vaga,
+    buscar_dados_mapa
 )
 from src.controllers.user_controller import buscar_candidatos_por_ids
+from src.utils.formatter import formatar_real
+from src.utils.ui import configurar_pagina, rodape_personalizado
+from src.controllers.municipio_controller import buscar_lista_estados, buscar_cidades_por_estado, buscar_dados_municipio
 from src.utils.formatter import formatar_real
 from src.utils.ui import configurar_pagina, rodape_personalizado
 
@@ -41,260 +45,297 @@ aba1, aba2 = st.tabs(["➕ Cadastrar Nova Vaga", "📋 Gerenciar Minhas Vagas"])
 # ABA 1: CADASTRAR
 # ==========================================
 with aba1:
-
     opcoes_habilidades = buscar_habilidades()
-    
-    # Se a lista vier vazia (banco vazio), colocamos um fallback para não quebrar visualmente
     if not opcoes_habilidades:
-        st.warning("Nenhuma habilidade cadastrada no banco de dados. Contate o administrador.")
         opcoes_habilidades = []
 
-    with st.form("form_criar_vaga"):
+    # --- Lógica de Estados e Cidades ---
+    lista_estados = buscar_lista_estados()
+    
+    # Criamos um container para o formulário
+    with st.container(border=True):
+        st.subheader("Nova Vaga")
+      
         titulo = st.text_input("Título da Vaga")
-        descricao = st.text_area("Descrição")
-        col1, col2 = st.columns(2)
-        tipo_contrato = st.selectbox("Tipo de Contrato", ["CLT", "PJ", "Estágio", "Outro"])
-        cidade = col1.text_input("Cidade")
-        estado = col2.selectbox("Estado", ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", 
-                                            "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"])
-        salario = st.number_input(
+        descricao = st.text_area("Descrição da Vaga")
+        
+        col_uf, col_cidade = st.columns(2)
+        
+        # 1. Seleção de Estado
+        estado_selecionado = col_uf.selectbox("Estado (UF)", options=lista_estados, index=None, placeholder="Selecione o Estado")
+        
+        # 2. Seleção de Cidade (Depende do Estado)
+        opcoes_cidades = []
+        if estado_selecionado:
+            opcoes_cidades = buscar_cidades_por_estado(estado_selecionado)
+            
+        cidade_selecionada = col_cidade.selectbox("Cidade", options=opcoes_cidades, placeholder="Selecione a Cidade", disabled=not estado_selecionado)
+
+        col_contrato, col_salario = st.columns(2)
+        tipo_contrato = col_contrato.selectbox("Tipo de Contrato", ["CLT", "PJ", "Estágio", "Outro"])
+        
+        salario = col_salario.number_input(
             "Salário (Use ponto para centavos)", 
-            min_value=0.0, 
-            step=100.0, 
-            format="%.2f"
+            min_value=0.0, step=100.0, format="%.2f"
         )
-        st.caption(f"Valor formatado: **{formatar_real(salario)}**")
+        st.caption(f"Valor: {formatar_real(salario)}")
+
         habs = st.multiselect(
             "Habilidades Requeridas", 
             options=opcoes_habilidades,
-            placeholder="Selecione uma ou mais habilidades..."
+            placeholder="Selecione..."
         )
         
-        btn_criar = st.form_submit_button("Publicar")
-        
-        if btn_criar:
-            # Monta o JSON igual ao seu exemplo
-            dados = {
-                "empregador": {"razao_social": st.session_state["razao_social"]},
-                "localizacao": {"cidade": cidade, "estado": estado},
-                "titulo": titulo,
-                "descricao": descricao,
-                "tipo_contrato": tipo_contrato, # Padrão ou adicione campo
-                "salario": salario,
-                "habilidades": habs,
-                "idiomas": ["Português"],
-                "candidatos_inscritos": [] # Começa vazio
-            }
-            criar_vaga(dados)
-            st.success("Vaga Criada!")
-            st.rerun()
+        st.write("")
+        if st.button("🚀 Publicar Vaga", type="primary", use_container_width=True):
+            # Validações
+            if not titulo or not descricao or not estado_selecionado or not cidade_selecionada:
+                st.warning("Preencha todos os campos obrigatórios (Título, Descrição e Localização).")
+            else:
+                # 3. Busca Latitude e Longitude no banco de Municípios
+                dados_geo = buscar_dados_municipio(cidade_selecionada, estado_selecionado)
+                
+                if not dados_geo:
+                    st.error("Erro ao buscar coordenadas da cidade. Tente outra.")
+                else:
+                    # Monta o JSON completo com a nova estrutura
+                    dados = {
+                        "empregador": {"razao_social": st.session_state["razao_social"]},
+                        "localizacao": {
+                            "cidade": cidade_selecionada, 
+                            "estado": estado_selecionado
+                        },
+                        # Aqui salvamos o objeto cidade completo para o mapa funcionar
+                        "cidade": {
+                            "nome": cidade_selecionada,
+                            "uf": estado_selecionado,
+                            "latitude": dados_geo.get("latitude"),
+                            "longitude": dados_geo.get("longitude")
+                        },
+                        "titulo": titulo,
+                        "descricao": descricao,
+                        "tipo_contrato": tipo_contrato,
+                        "salario": salario,
+                        "habilidades": habs,
+                        "idiomas": ["Português"],
+                        "candidatos_inscritos": []
+                    }
+                    
+                    criar_vaga(dados)
+                    st.success("Vaga publicada com sucesso!")
+                    import time
+                    time.sleep(1.5)
+                    st.rerun()
 
 # ==========================================
 # ABA 2: GERENCIAR (VER, EDITAR, DELETAR, CANDIDATOS)
 # ==========================================
+# ==========================================
+# ABA 2: GERENCIAR (CORRIGIDO E COMPLETADO)
+# ==========================================
 with aba2:
     st.write("Aqui estão suas vagas ativas.")
+    
+    # --- 1. MAPA DE VAGAS DA EMPRESA ---
+    st.info("🗺️ Distribuição das suas vagas:")
+    dados_mapa = buscar_dados_mapa(st.session_state["razao_social"])
+    
+    if dados_mapa:
+        # Prepara dados para o st.map (precisa de colunas 'lat' e 'lon')
+        df_mapa = pd.DataFrame([{
+            "lat": d["cidade"]["latitude"],
+            "lon": d["cidade"]["longitude"]
+        } for d in dados_mapa])
+        
+        st.map(df_mapa, size=20, color="#FF4B4B") # Vermelho
+    else:
+        st.caption("Cadastre vagas com localização para ver o mapa.")
+    st.divider()
 
+    # --- 2. PREPARAÇÃO DE DADOS AUXILIARES ---
     opcoes_habilidades = buscar_habilidades()
-    
-    # Se a lista vier vazia (banco vazio), colocamos um fallback para não quebrar visualmente
     if not opcoes_habilidades:
-        st.warning("Nenhuma habilidade cadastrada no banco de dados. Contate o administrador.")
         opcoes_habilidades = []
-    
-    # 1. Busca as vagas do banco
+        
+    lista_estados = buscar_lista_estados() # Busca UFs para os selects
+
+    # --- 3. LISTAGEM DE VAGAS ---
     minhas_vagas = buscar_vagas_por_empresa(st.session_state["razao_social"])
     
     if not minhas_vagas:
         st.info("Nenhuma vaga cadastrada.")
     
     for vaga in minhas_vagas:
-        # Mostra um resumo no título do expander
-        titulo_expander = f"📢 {vaga['titulo']} - {vaga['localizacao']['cidade']}/{vaga['localizacao']['estado']}"
+        # Tenta pegar cidade/uf antiga ou nova estrutura
+        cidade_atual = vaga.get('localizacao', {}).get('cidade', 'N/A')
+        uf_atual = vaga.get('localizacao', {}).get('estado', 'N/A')
+
+        titulo_expander = f"📢 {vaga['titulo']} - {cidade_atual}/{uf_atual}"
         
         with st.expander(titulo_expander):
-            # --- ÁREA DE CANDIDATOS ---
-# ... (dentro do with st.expander(titulo_expander): da vaga) ...
-
-            st.divider()
-            st.write("#### 👥 Candidatos Inscritos")
             
+            # ---------------------------
+            # A) ÁREA DE CANDIDATOS
+            # ---------------------------
+            st.write("#### 👥 Candidatos Inscritos")
             lista_ids = vaga.get("candidatos_inscritos", [])
             
             if not lista_ids:
                 st.info("Nenhum candidato se inscreveu nesta vaga ainda.")
             else:
-                # Busca os dados completos (incluindo currículo)
                 candidatos = buscar_candidatos_por_ids(lista_ids)
-                
-                # Prepara os sets da VAGA para calcular o Match
                 skills_vaga = set(vaga.get("habilidades", []))
 
                 for cand in candidatos:
-                    # Pega os dados do objeto 'candidato' (pode estar vazio se ele nunca editou)
                     info_cand = cand.get("candidato", {})
                     curr_cand = info_cand.get("curriculo", {})
-                    
-                    # --- CÁLCULO DO MATCH ---
                     skills_cand = set(curr_cand.get("habilidades", []))
-                    match_items = skills_vaga.intersection(skills_cand)
+                    
+                    # Match
                     match_percent = 0
                     if skills_vaga:
+                        match_items = skills_vaga.intersection(skills_cand)
                         match_percent = int((len(match_items) / len(skills_vaga)) * 100)
                     
-                    # Define cor/icone do match
-                    icon_match = "🔴"
-                    if match_percent >= 50: icon_match = "🟡" 
-                    if match_percent >= 80: icon_match = "🟢"
+                    icon_match = "🟢" if match_percent >= 80 else "🟡" if match_percent >= 50 else "🔴"
 
-                    # --- VISUAL DO CANDIDATO ---
-                    # Cria um expander para cada pessoa
-                    with st.expander(f"{icon_match} {match_percent}% Match | {cand['nome']}"):
-                        
-                        col_a, col_b = st.columns([1, 1])
-                        
-                        with col_a:
-                            st.markdown(f"**📧 Email:** {cand['email']}")
-                            
-                            # Mostra quais habilidades bateram
-                            if match_items:
-                                st.success(f"**Match:** {', '.join(match_items)}")
-                            
-                            # Mostra as que faltam (opcional, mas útil para o RH)
-                            missing = skills_vaga - skills_cand
-                            if missing:
-                                st.error(f"**Faltam:** {', '.join(missing)}")
-                        
-                        with col_b:
-                            idiomas = curr_cand.get("idiomas", [])
-                            st.markdown(f"**🗣️ Idiomas:** {', '.join(idiomas) if idiomas else 'Não informado'}")
-                            
-                            # Links de contato (Linkedin, etc)
-                            contatos = info_cand.get("contatos", [])
-                            if contatos:
-                                st.markdown("**🔗 Contatos:**")
-                                for c in contatos:
-                                    st.write(f"- {c.get('tipo')}: {c.get('valor')}")
+                    with st.popover(f"{icon_match} {match_percent}% | {cand['nome']}"):
+                        st.write(f"**Email:** {cand['email']}")
+                        st.write(f"**Resumo:** {info_cand.get('resumo', '')}")
+                        st.write(f"**Habilidades:** {', '.join(skills_cand)}")
+                        idiomas = curr_cand.get("idiomas", [])
+                        if idiomas: st.write(f"**Idiomas:** {', '.join(idiomas)}")
 
-                        st.markdown("---")
-                        st.markdown("**📝 Resumo Profissional:**")
-                        st.write(info_cand.get("resumo", "Sem resumo cadastrado."))
-                        
-                        st.markdown("**🎓 Formação / Experiência:**")
-                        st.write(info_cand.get("experiencia", "Não informado."))
+            st.divider()
             
-            # if not lista_ids:
-            #     st.write("_Nenhum candidato inscrito ainda._")
-            # else:
-            #     # Busca os dados reais dos usuários
-            #     candidatos = buscar_candidatos_por_ids(lista_ids)
-                
-            #     # Mostra numa tabelinha simples
-            #     dados_tabela = []
-            #     for c in candidatos:
-            #         dados_tabela.append({
-            #             "Nome": c["nome"],
-            #             "Email": c["email"],
-            #             # "Link Currículo": "Ver PDF" (Ideia futura)
-            #         })
-            #     st.dataframe(dados_tabela, use_container_width=True)
-
-            # st.divider()
-            
-# --- ÁREA DE EDIÇÃO ---
+            # ---------------------------
+            # B) ÁREA DE EDIÇÃO (DINÂMICA)
+            # ---------------------------
             st.write("#### ✏️ Editar Vaga")
             
-            with st.form(key=f"edit_{vaga['_id']}"):
-                novo_titulo = st.text_input("Título", value=vaga['titulo'])
-                nova_desc = st.text_area("Descrição", value=vaga['descricao'])
+            
+            col_titulo, col_dummy = st.columns([2, 1])
+            novo_titulo = col_titulo.text_input("Título", value=vaga['titulo'], key=f"tit_{vaga['_id']}")
+            
+            # --- Lógica de UF/Cidade ---
+            col_uf, col_cidade = st.columns(2)
+            
+            # 1. Recupera índice do estado atual
+            try:
+                idx_uf = lista_estados.index(uf_atual)
+            except ValueError:
+                idx_uf = 0
+            
+            # 2. Selectbox de Estado (Reativo)
+            novo_estado = col_uf.selectbox(
+                "Estado", 
+                options=lista_estados, 
+                index=idx_uf, 
+                key=f"uf_{vaga['_id']}"
+            )
+            
+            # 3. Carrega cidades baseadas no Estado selecionado acima
+            cidades_edit = buscar_cidades_por_estado(novo_estado)
+            
+            # 4. Recupera índice da cidade atual (se existir na nova lista)
+            try:
+                idx_cidade = cidades_edit.index(cidade_atual)
+            except ValueError:
+                idx_cidade = 0
                 
-                # --- CORREÇÃO DO SELECTBOX ---
-                lista_contratos = ["CLT", "PJ", "Estágio", "Outro"]
-                
-                # Descobre qual o índice (posição) do valor salvo no banco
-                try:
-                    index_atual = lista_contratos.index(vaga.get('tipo_contrato', "CLT"))
-                except ValueError:
-                    index_atual = 0 # Se der erro, marca o primeiro como padrão
-                
-                tipo_contrato = st.selectbox(
-                    "Tipo de Contrato", 
-                    options=lista_contratos, 
-                    index=index_atual # Usa index, não value!
-                )
+            nova_cidade = col_cidade.selectbox(
+                "Cidade", 
+                options=cidades_edit, 
+                index=idx_cidade, 
+                key=f"cid_{vaga['_id']}"
+            )
+            # ---------------------------
 
-                # --- MÁSCARA NO INPUT ---
-                novo_salario = st.number_input(
-                    "Salário (use ponto para centavos)", 
-                    value=float(vaga['salario']),
-                    min_value=0.0, 
-                    step=100.0,   
-                    format="%.2f"
-                )
-                # Mostra o valor formatado bonitinho abaixo
-                st.caption(f"Valor formatado: **{formatar_real(novo_salario)}**")
+            nova_desc = st.text_area("Descrição", value=vaga['descricao'], key=f"desc_{vaga['_id']}")
+            
+            col_e3, col_e4 = st.columns(2)
+            
+            lista_contratos = ["CLT", "PJ", "Estágio", "Outro"]
+            try:
+                idx_cont = lista_contratos.index(vaga.get('tipo_contrato', "CLT"))
+            except: idx_cont = 0
+            
+            novo_tipo = col_e3.selectbox("Contrato", lista_contratos, index=idx_cont, key=f"tipo_{vaga['_id']}")
+            
+            novo_salario = col_e4.number_input(
+                "Salário", 
+                value=float(vaga['salario']), 
+                step=100.0,
+                format="%.2f", 
+                key=f"sal_{vaga['_id']}"
+            )
+
+            novas_habs = st.multiselect(
+                "Habilidades", 
+                options=opcoes_habilidades, 
+                default=vaga['habilidades'], 
+                key=f"hab_{vaga['_id']}"
+            )
+            
+            if st.button("💾 Salvar Alterações", key=f"btn_save_{vaga['_id']}"):
+                # Busca Geo Localização
+                dados_geo_edit = buscar_dados_municipio(nova_cidade, novo_estado)
                 
-                # --- CORREÇÃO DO MULTISELECT ---
-                # O parâmetro correto aqui é 'default', não 'value'
-                habs = st.multiselect(
-                     "Habilidades Requeridas",
-                     options=opcoes_habilidades, # Lista completa do banco (que vem do controller)
-                     default=vaga['habilidades'], # Itens que já vêm marcados
-                     placeholder="Selecione uma ou mais habilidades..."
-                 )
-                
-                col_save, col_del = st.columns([1, 1])
-                btn_salvar = col_save.form_submit_button("💾 Salvar Alterações")
-                
-                if btn_salvar:
-                    update_data = {
-                        "titulo": novo_titulo,
-                        "descricao": nova_desc,
-                        "salario": novo_salario,
-                        "tipo_contrato": tipo_contrato,
-                        "habilidades": habs,
+                update_data = {
+                    "titulo": novo_titulo,
+                    "descricao": nova_desc,
+                    "salario": novo_salario,
+                    "tipo_contrato": novo_tipo,
+                    "habilidades": novas_habs,
+                    "localizacao": {"cidade": nova_cidade, "estado": novo_estado},
+                    "cidade": {
+                        "nome": nova_cidade,
+                        "uf": novo_estado,
+                        "latitude": dados_geo_edit["latitude"] if dados_geo_edit else 0,
+                        "longitude": dados_geo_edit["longitude"] if dados_geo_edit else 0
                     }
-                    atualizar_vaga(vaga['_id'], update_data)
-                    st.success("Atualizado!")
-                    st.rerun()
-
-            
-        # --- FORA DO FORMULÁRIO ---
-        st.divider() # Cria uma linha divisória visual
-        
-        # Colunas para organizar o botão à esquerda
-        col_trash, col_aviso = st.columns([1, 3])
-        
-        # Criamos uma chave única para o estado de confirmação dessa vaga específica
-        chave_confirmar = f"confirmar_exclusao_{vaga['_id']}"
-        
-        if chave_confirmar not in st.session_state:
-            st.session_state[chave_confirmar] = False
-
-        # Botão inicial de Excluir
-        if col_trash.button("🗑️ Excluir", key=f"btn_trash_{vaga['_id']}", type="primary"):
-            st.session_state[chave_confirmar] = True # Ativa o alerta
-
-        # Se ativou o alerta, mostra a confirmação
-        if st.session_state[chave_confirmar]:
-            st.warning("⚠️ Tem certeza? Essa ação excluirá a vaga e removerá todos os candidatos associados.")
-            
-            col_sim, col_nao = st.columns(2)
-            
-            if col_sim.button("✅ Sim, excluir", key=f"sim_{vaga['_id']}"):
-                # Chama a função do controller que já existe
-                excluir_vaga(vaga['_id'])
-                
-                st.toast("Vaga excluída com sucesso!", icon="🗑️")
-                
-                # Limpa o estado e recarrega a página
-                del st.session_state[chave_confirmar]
+                }
+                atualizar_vaga(vaga['_id'], update_data)
+                st.success("Vaga atualizada com sucesso!")
                 import time
                 time.sleep(1)
                 st.rerun()
+
+            # ---------------------------
+            # C) LÓGICA DE EXCLUSÃO
+            # ---------------------------
+            st.divider()
             
-            if col_nao.button("❌ Cancelar", key=f"nao_{vaga['_id']}"):
+            col_trash, col_aviso = st.columns([1, 3])
+            
+            # Chave única para controle de estado
+            chave_confirmar = f"confirmar_exclusao_{vaga['_id']}"
+            
+            if chave_confirmar not in st.session_state:
                 st.session_state[chave_confirmar] = False
-                st.rerun()
+
+            # Botão inicial
+            if col_trash.button("🗑️ Excluir", key=f"btn_trash_{vaga['_id']}", type="primary"):
+                st.session_state[chave_confirmar] = True
+
+            # Alerta de confirmação
+            if st.session_state[chave_confirmar]:
+                st.warning("⚠️ Tem certeza? Essa ação excluirá a vaga e removerá todos os candidatos associados.")
+                
+                col_sim, col_nao = st.columns(2)
+                
+                if col_sim.button("✅ Sim, excluir", key=f"sim_{vaga['_id']}"):
+                    excluir_vaga(vaga['_id'])
+                    st.toast("Vaga excluída com sucesso!", icon="🗑️")
+                    
+                    # Limpa estado e recarrega
+                    del st.session_state[chave_confirmar]
+                    import time
+                    time.sleep(1)
+                    st.rerun()
+                
+                if col_nao.button("❌ Cancelar", key=f"nao_{vaga['_id']}"):
+                    st.session_state[chave_confirmar] = False
+                    st.rerun()
 
 rodape_personalizado()

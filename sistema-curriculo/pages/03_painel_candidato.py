@@ -1,10 +1,12 @@
-# pages/03_painel_candidato.py
+
 import streamlit as st
 import time
+import pandas as pd
+import plotly.express as px
 
 # Imports dos controllers
 from src.controllers.candidato_controller import buscar_perfil_candidato, atualizar_curriculo, excluir_curriculo_completo
-from src.controllers.vaga_controller import listar_todas_vagas, candidatar_vaga
+from src.controllers.vaga_controller import listar_todas_vagas, candidatar_vaga, buscar_dados_mapa
 from src.controllers.habilidade_controller import buscar_habilidades
 from src.utils.formatter import formatar_real
 from src.utils.ui import configurar_pagina, rodape_personalizado
@@ -122,19 +124,79 @@ with tab_vagas:
     col_header, col_sort = st.columns([2, 1])
     col_header.write("### Vagas Disponíveis")
     
-    ordem = col_sort.radio(
-        "Ordenar por:",
-        ["Mais Recentes", "Maior Compatibilidade 🟢", "Menor Compatibilidade 🔴"],
-        horizontal=True,
-        label_visibility="collapsed"
-    )
-    
-    todas_vagas = listar_todas_vagas()
-    minhas_skills = set(candidato_info.get("curriculo", {}).get("habilidades", []))
+    # 1. Busca dados para o mapa
+    dados_geo = buscar_dados_mapa()
+    id_vaga_selecionada = None
 
-    # --- Lógica de Match e Ordenação ---
+    # --- MAPA INTERATIVO  ---
+    if dados_geo:
+        with st.expander("🗺️ Ver Mapa de Oportunidades", expanded=False):
+            # Cria DataFrame incluindo o ID para filtrar depois
+            df_mapa = pd.DataFrame([{
+                "lat": v["cidade"]["latitude"],
+                "lon": v["cidade"]["longitude"],
+                "titulo": v["titulo"],
+                "empresa": v["empregador"]["razao_social"],
+                "id_vaga": str(v["_id"]) # Converte ID para string
+            } for v in dados_geo])
+
+            # Configura o gráfico
+            fig = px.scatter_mapbox(
+                df_mapa,
+                lat="lat",
+                lon="lon",
+                hover_name="titulo",
+                hover_data={"empresa": True, "lat": False, "lon": False, "id_vaga": False},
+                zoom=3,
+                height=350
+            )
+            fig.update_layout(mapbox_style="open-street-map", margin={"r":0,"t":0,"l":0,"b":0})
+            fig.update_traces(marker=dict(size=14, color="#00CC96"))
+
+            # Exibe e captura o clique
+            event = st.plotly_chart(
+                fig, 
+                on_select="rerun", 
+                selection_mode="points", 
+                use_container_width=True
+            )
+            
+            # Lógica de Seleção
+            if event and event["selection"]["points"]:
+                idx = event["selection"]["points"][0]["point_index"]
+                id_vaga_selecionada = df_mapa.iloc[idx]["id_vaga"]
+                
+                # Feedback visual e botão de limpar
+                st.info(f"📍 Filtrando pela vaga selecionada no mapa.")
+                if st.button("❌ Limpar filtro do mapa"):
+                    id_vaga_selecionada = None
+                    st.rerun()
+
+    # --- CONTROLES DE LISTA ---
+    # Só mostra ordenação se NÃO tiver filtro de mapa (pois filtro traz só 1 vaga)
+    if not id_vaga_selecionada:
+        ordem = col_sort.radio(
+            "Ordenar por:",
+            ["Mais Recentes", "Maior Compatibilidade 🟢", "Menor Compatibilidade 🔴"],
+            horizontal=True,
+            label_visibility="collapsed"
+        )
+    
+    # Busca todas as vagas
+    todas_vagas = listar_todas_vagas()
+    
+    # --- FILTRAGEM (Mapa vs Tudo) ---
+    if id_vaga_selecionada:
+        # Filtra a lista comparando o ID (convertido pra string)
+        vagas_filtradas = [v for v in todas_vagas if str(v["_id"]) == id_vaga_selecionada]
+    else:
+        vagas_filtradas = todas_vagas
+
+    # --- CÁLCULO DE MATCH ---
+    minhas_skills = set(candidato_info.get("curriculo", {}).get("habilidades", []))
     vagas_processadas = []
-    for vaga in todas_vagas:
+
+    for vaga in vagas_filtradas:
         skills_vaga = set(vaga.get("habilidades", []))
         match_percent = 0
         match_items = set()
@@ -147,17 +209,20 @@ with tab_vagas:
         vaga["_match_items"] = match_items
         vagas_processadas.append(vaga)
 
-    if ordem == "Maior Compatibilidade 🟢":
-        vagas_processadas.sort(key=lambda x: x["_match_percent"], reverse=True)
-    elif ordem == "Menor Compatibilidade 🔴":
-        vagas_processadas.sort(key=lambda x: x["_match_percent"], reverse=False)
-    else:
-        vagas_processadas.sort(key=lambda x: x["_id"], reverse=True)
+    # --- ORDENAÇÃO ---
+    if not id_vaga_selecionada:
+        if ordem == "Maior Compatibilidade 🟢":
+            vagas_processadas.sort(key=lambda x: x["_match_percent"], reverse=True)
+        elif ordem == "Menor Compatibilidade 🔴":
+            vagas_processadas.sort(key=lambda x: x["_match_percent"], reverse=False)
+        else:
+            vagas_processadas.sort(key=lambda x: x["_id"], reverse=True)
 
-    # --- Exibição ---
-    if not minhas_skills:
-        st.info("💡 Dica: Preencha a aba 'Meu Currículo' para ver quais vagas combinam com você!")
+    # --- EXIBIÇÃO DOS CARDS ---
+    if not vagas_processadas:
+        st.warning("Nenhuma vaga encontrada.")
 
+    # Loop de exibição (Seu código original mantido aqui)
     count = 0
     for vaga in vagas_processadas:
         count += 1
@@ -166,7 +231,7 @@ with tab_vagas:
             
             with col_info:
                 st.subheader(vaga['titulo'])
-                st.caption(f"{vaga['empregador']['razao_social']} | {vaga['localizacao']['cidade']}-{vaga['localizacao']['estado']}")
+                st.caption(f"{vaga['empregador']['razao_social']} | {vaga['cidade']['nome']}-{vaga['cidade']['uf']}")
                 st.caption(f"Tipo de Contrato - {vaga['tipo_contrato']}")
                 st.write(vaga['descricao'])
                 st.markdown(f"**Salário:** {formatar_real(vaga['salario'])}")
@@ -177,7 +242,6 @@ with tab_vagas:
                 if usuario_id_str in inscritos_str:
                     st.success("✅ Já candidatado")
                 else:
-                    # Key única para evitar conflito de botões
                     if st.button("Quero me candidatar", key=f"btn_{vaga['_id']}_{count}"):
                         sucesso, msg = candidatar_vaga(vaga['_id'], dados_usuario["_id"])
                         if sucesso:
@@ -200,5 +264,4 @@ with tab_vagas:
                 
                 if match_items:
                     st.caption(f"Match: {', '.join(match_items)}")
-
 rodape_personalizado()
