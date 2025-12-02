@@ -28,9 +28,9 @@ with st.sidebar:
         st.switch_page("app.py")
 
 # --- BLOQUEIO DE SEGURANÇA (Mantenha seu código original) ---
-if "logado" not in st.session_state or st.session_state["perfil"] != "EMPREGADOR":
-    st.warning("Acesso restrito a Empresas.")
-    st.stop()
+    if "logado" not in st.session_state or st.session_state["perfil"] == "CANDIDATO":
+        st.warning("Acesso restrito a Empresas.")
+        st.stop()
 
 st.title(f"Painel Corporativo")
 st.markdown("Gerencie suas vagas e visualize candidatos qualificados.")

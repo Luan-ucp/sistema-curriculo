@@ -12,6 +12,20 @@ Projeto/
 ```
 # 📍 Detalhes do Conteúdo
 
+## Usuarios a serem utilizandos para teste
+
+Empregador
+email: empregador@email.com
+senha: 98765
+
+Candidato
+email: candidato@email.com
+senha: 12345
+
+ADMIN
+email: admin@sistema.com
+senha: admin123
+
 ## 1. 🛢️ Pasta ```SQL/```
 
 Nesta pasta encontram-se os arquivos referentes ao Banco de Dados Relacional (MySQL).

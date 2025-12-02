@@ -2,3 +2,11 @@ streamlit
 pymongo==4.15.4
 pandas
 plotly
+
+# Google Gemini SDK
+google-generativeai
+google-genai
+
+# Dependências extras úteis
+python-dotenv
+requests
