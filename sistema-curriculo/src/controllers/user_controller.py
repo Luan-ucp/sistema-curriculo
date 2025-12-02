@@ -74,7 +74,7 @@ def salvar_usuario(nome, email, senha, perfil, razao_social=None):
     }
     
     # 3. Adiciona campos específicos baseados no perfil
-    if perfil == "EMPREGADOR":
+    if perfil in ["EMPREGADOR", "ADMIN"]:
         if not razao_social:
             return False, "Razão Social é obrigatória para empresas."
         
@@ -82,7 +82,7 @@ def salvar_usuario(nome, email, senha, perfil, razao_social=None):
             "razao_social": razao_social
         }
         
-    elif perfil == "CANDIDATO":
+    if perfil in ["CANDIDATO", "ADMIN"]:
         # Inicializa a estrutura vazia para evitar erros no Portal do Candidato
         novo_usuario["candidato"] = {
             "experiencia": "Não informado",

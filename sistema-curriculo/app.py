@@ -105,10 +105,30 @@ def tela_entrada():
 # --- DIRECIONADOR DE FLUXO ---
 # Verifica se está logado para redirecionar ou mostrar login
 if st.session_state["logado"]:
-    if st.session_state["perfil"] == "EMPREGADOR":
+    perfil = st.session_state["perfil"]
+
+    if perfil == "EMPREGADOR":
         st.switch_page("pages/02_painel_empresa.py")
-    elif st.session_state["perfil"] == "CANDIDATO":
+
+    elif perfil == "CANDIDATO":
         st.switch_page("pages/03_painel_candidato.py")
+
+    elif perfil == "ADMIN":
+        st.title("Área Administrativa")
+
+        st.subheader("Escolha o painel que deseja acessar:")
+
+        col1, col2, col3 = st.columns(3)
+
+        with col1:
+            if st.button("Painel da Empresa", use_container_width=True):
+                st.switch_page("pages/02_painel_empresa.py")
+
+        with col2:
+            if st.button("Painel do Candidato", use_container_width=True):
+                st.switch_page("pages/03_painel_candidato.py")
+
+        st.stop() 
 else:
     # Se não está logado, mostra a tela de entrada
     tela_entrada()

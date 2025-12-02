@@ -1,4 +1,4 @@
-
+from src.services.rag_service import consultar_rag
 import streamlit as st
 import time
 import pandas as pd
@@ -21,11 +21,12 @@ with st.sidebar:
         st.switch_page("app.py")
 
 # --- 1. SEGURANÇA E SETUP ---
+
 if "logado" not in st.session_state or not st.session_state["logado"]:
     st.warning("Faça login.")
     st.stop()
 
-if st.session_state["perfil"] != "CANDIDATO":
+if st.session_state["perfil"] == "EMPREGADOR":
     st.error("Página exclusiva para candidatos.")
     st.stop()
 
@@ -41,7 +42,11 @@ candidato_info = dados_usuario.get("candidato", {
 st.title(f"Portal do Candidato: {st.session_state['usuario_nome']}")
 
 # --- 2. ABAS ---
-tab_curriculo, tab_vagas = st.tabs(["📄 Meu Currículo", "🔍 Buscar Vagas"])
+tab_curriculo, tab_vagas, tab_ia = st.tabs([
+    "📄 Meu Currículo",
+    "🔍 Buscar Vagas",
+    "🤖 Chat com IA"
+])
 
 # ==========================================
 # ABA 1: MEU CURRÍCULO
@@ -265,3 +270,24 @@ with tab_vagas:
                 if match_items:
                     st.caption(f"Match: {', '.join(match_items)}")
 rodape_personalizado()
+
+# ==========================================
+# ABA 3: CHAT COM IA (RAG)
+# ==========================================
+with tab_ia:
+    st.header("🤖 Assistente Inteligente")
+
+    st.caption("Faça uma pergunta sobre vagas, currículo, carreira ou habilidades.")
+
+    pergunta = st.text_input("Digite sua pergunta:")
+
+    if st.button("Perguntar", type="primary", use_container_width=True):
+        if not pergunta.strip():
+            st.warning("Digite uma pergunta.")
+        else:
+            with st.spinner("Consultando a IA..."):
+
+                resposta = consultar_rag(pergunta)
+
+            st.success("Resposta da IA:")
+            st.write(resposta)
